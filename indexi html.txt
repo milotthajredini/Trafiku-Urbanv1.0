@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css"></link>
+        <title>Trafiku Urban i Prishtin&eumls</title>
+        <link rel="icon" href="C://Users/ZHABA/Desktop/WEB/favicon.ico" type="image/x-icon">
+        
+
+    </head>
+    <body>
+        <div class="header">
+            <img src="c://Users/ZHABA/Desktop/web2/logofinal.png"> </a>
+            <div class="img2">
+                <img src="c://Users/ZHABA/Desktop/web2/logo-k.png"> </a>
+            </div>
+        
+        </div>
+        
+        <div class="nav">
+        <ul>
+                <li> <a href="index.html">Ballina</a></li>
+                <div class="dropdown">
+                        <button class="dropbtn">Linjat</button>
+                        <div class="dropdown-content">
+                          <a href="#">Oraret</a>
+                          <a href="#">Stacionet</a>
+                        </div>
+                      </div>
+                <li> <a href="#news">Biletat</a></li>
+                <li> <a href="#news">Hartat</a></li>
+                <li> <a href="#news">Kontakti</a></li>
+                <li> <a href="#news">Rreth Nesh</a></li>
+            </ul>
+        </div>
+       
+        
+       
+    </body>
+</html>

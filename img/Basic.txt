@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="icon" href="C:\Users\ZHABA\Desktop\WEB\favicon.ico" type="image/x-icon">
+    <title>Trafiku Urban<img src="C:\Users\ZHABA\Desktop\WEB\hynshea.png" width="10px" height="10px"></title>
+    <style>
+    html {
+  scroll-behavior: smooth;
+}
+    body{background-color: steelblue}
+    img {
+      
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+img{
+  
+  display: block;
+  margin-left:1%;
+  margin-right: 0%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color :#555;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(147, 155, 155);
+}
+
+.active {
+  background-color: rgb(68, 92, 168);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color:steelblue;
+  padding: -300px;
+  display: block;
+  margin-left: 50%;
+  margin-right: 50%;
+  top:-100px;
+  
+}
+
+
+.text{
+  position: relative;
+  top: -100px;
+  
+}
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+    </style>
+    
+    <body>
+        <div class="header">
+            <h1><img src="C:\Users\ZHABA\Desktop\WEB\hynshea.png" alt="Hynesha ne Fron"></h1>
+            
+          </div>
+        <div class="text">
+          <h2><img src="C:\Users\ZHABA\Desktop\WEB\font123456.png" alt="Trafiku Urban"  ></h2>
+        </div>
+        <ul>
+            <li><a class="active" href="#home">Ballina</a></li>
+            <li><a href="#news">Oraret</a></li>
+            <li><a href="biletat.html">Biletat</a></li>
+            <li><a href="#about">Harta</a></li>
+            <li><a href="#about">Kontakti</a></li>
+            <li><a href="#about">Rreth Nesh</a></li>
+          </ul>
+          
+          <div class="row">
+              <div class="column side">
+                <h2></h2>
+                <p></p>
+              </div>
+              <form>
+              <div class="column middle">
+                <h2></h2>
+                <p> </p>
+                <p></p>
+                
+              </div>
+              </form>
+              <div class="column side">
+                
+                
+              </div>
+            </div>
+        
+    </body>
+      
+
+    </head>
+</html>
