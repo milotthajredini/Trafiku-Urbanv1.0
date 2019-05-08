@@ -39,31 +39,69 @@
             <div class="formleft">   
             <div class="container">
                         <h2>Bileta</h2>
-                        <form action="/action_page.php">
+                        <form action="biletajuaj.html">
                           <div class="form-group">
-                            <label for="name">Emri  </label>
-                            <input type="text" class="form-control" id="text" placeholder="Arianit" name="Emri">
+                            <div class="form-group emrimbiemri"  >
+                              <!-- <label for="name" style="padding-left:10px;">Emri  </label> -->
+                            <input type="text" class="form-control" id="text" placeholder="First Name" name="Emri" style="width:150px;display: flex;" >
+                          </div>
+                          <div class="form-group emrimbiemri" style="padding-left:5px;">
+                            <!-- <label for="text" style="padding-left:12px;">Mbiemri </label> -->
+                            <input type="text" class="form-control" id="text" placeholder="Last Name" name="Mbiemri" style="width:228px;display:flex;" >
+                          </div>
                           </div>
                           <div class="form-group">
-                            <label for="text" style="margin-left:-23px;">Mbiemri </label>
-                            <input type="text" class="form-control" id="text" placeholder="Muhadri" name="Mbiemri">
+                            <!-- <label for="text">Linja  </label> -->
+                            <input type="text" class="form-control" id="text" placeholder="4" name="Linja" style="width:390px;margin-left: 6px" >
                           </div>
-                          <div class="form-group">
-                            <label for="text">Linja  </label>
-                            <input type="text" class="form-control" id="text" placeholder="4" name="Linja">
+                          <div class="form-group" style="padding-left:5px;">
+                              <!-- <label for="email">Email  </label> -->
+                              <input type="email" class="form-control" id="email" placeholder="example@email.com" name="Email" style="width:392px;">
                           </div>
-                          <div class="form-group">
-                              <label for="email">Email  </label>
-                              <input type="email" class="form-control" id="email" placeholder="example@email.com" name="Email">
+                          <h3>Credit Card</h3>
+                         
+                            <div class="creditcard">
+                              <div class="creditcard name">
+                              <input type="text" class="form-control" id="text" placeholder="Name on the Card" name="Name on the Card" style="width:390px;margin-left: 6px;margin-bottom: 12px">
+                              </div>
+                              <div class="creditcard number">
+                              <input type="text" class="form-control" id="text" placeholder="Creditcard Number" name="Creditcard Number" style="width:390px;margin-left: 6px;margin-bottom: 12px;">
+                            </div>
+                            <div class="ccdateccv">
+                                <input type="text" class="form-control" id="text" placeholder="Exp. Month Date" name="date" style="width:200;margin-left: 6px;margin-bottom: 12px;">
+                                <input type="text" class="form-control" id="text" placeholder="CCV" name="CCV" style="width:180px;margin-left: 6px">
+                              
+                                  
+                              </div>
                           </div>
+                            </div>
+                            <!-- <img src="https://api.qrserver.com/v1/create-qr-code/?data=0000001&amp;size=220x220&amp;margin=0" id="qrcode-preview-image" alt="Preview of your QR Code"> -->
+
+
+
+
+
+
+
                           <div class="radio">
-                              <label for="text">Zgjedh Menyren </label>
-                              <input type="radio" class="radiotype" name="menyra" value="Ditore" >Ditore<br>
-                              <input type="radio" class="radiotype" name="menyra" value="Ditore" >Javore<br>
+                              <label for="text" style="padding-left:100px;font-family: helvetica;font-size: 25px;">Zgjedh Menyren </label>
+                              <div class="radioform">
+                                <div class="ditore" style="padding-right:10px;">
+                              <input type="radio" class="radiotype" name="menyra" value="Ditore"  >Ditore<br>
+                              </div>
+                              <div class="javore" style="padding-right:10;">
+                              <input type="radio" class="radiotype" name="menyra" value="Javore" >Javore<br>
+                              </div>
+                              <div class="mujore" >
+                                  <input type="radio" class="radiotype" name="menyra" value="Mujore" >Mujore<br>
+                              </div>
+                            </div>
                           </div>
                           <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
          </div>
         </div> 
+
+       
     </body>
     </html>
