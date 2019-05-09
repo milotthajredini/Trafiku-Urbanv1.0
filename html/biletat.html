@@ -86,14 +86,14 @@
                           <div class="radio">
                               <label for="text" style="padding-left:100px;font-family: helvetica;font-size: 25px;">Zgjedh Menyren </label>
                               <div class="radioform">
-                                <div class="ditore" style="padding-right:10px;">
-                              <input type="radio" class="radiotype" name="menyra" value="Ditore"  >Ditore<br>
+                                <div  class="ditore" style="padding-right:10px;">
+                              <input  id="ditore" type="radio"  class="radiotype" name="menyra" value="0.40c"  >Ditore<br>
                               </div>
-                              <div class="javore" style="padding-right:10;">
-                              <input type="radio" class="radiotype" name="menyra" value="Javore" >Javore<br>
+                              <div id="javore" class="javore" style="padding-right:10;">
+                              <input type="radio" class="radiotype" name="menyra" value="10$" >Javore<br>
                               </div>
-                              <div class="mujore" >
-                                  <input type="radio" class="radiotype" name="menyra" value="Mujore" >Mujore<br>
+                              <div class="mujore" id="mujore" >
+                                  <input  type="radio"   class="radiotype" name="menyra" value="15$" >Mujore<br>
                               </div>
                             </div>
                           </div>
@@ -101,7 +101,35 @@
                         </form>
          </div>
         </div> 
+<!-- <div class="skripta">
+       <script style="justify-content:center;">
+         
+          var shuma= null;
+          function check() {
+        document.getElementById("ditore").checked = true;
+}
+          function ditorja() {
+          document.getElementById("ditore")
+}
 
-       
+              ditore=document.getElementById("ditore");
+              javore=document.getElementById("javore");
+              mujore=document.getElementById("mujore");
+
+
+
+
+              // if(ditorja.check=true){
+              //   document.write(ditore.value);
+              // }  
+              // else if(ditore.check=false){
+                  
+              // }
+                document.getElementById("javore").val
+                document.write(document.getElementById(javore).nodeValue)
+              
+
+       </script> -->
+       </div>
     </body>
     </html>
