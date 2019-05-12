@@ -128,7 +128,8 @@ li a {
     
   }
   .main{
-      display: block;
+      display: flex;
+      justify-content: center;
       padding-top: 20px;
   }
   .button {

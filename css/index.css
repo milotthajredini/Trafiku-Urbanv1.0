@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 html{
     scroll-behavior: smooth;
 }
@@ -127,7 +128,7 @@ li a {
     border-radius: 15px;
   }
   .carousel-inner img {
-     width: 100%
+     width: 100%;
     
   }
   .carousel-indicators {
@@ -153,8 +154,45 @@ li a {
     margin-left: 110px;
   }
   footer {
-    background-color: #777;
+    background-image: url(../img/footer.png);
     padding: 10px;
     text-align: center;
     color: white;
+    height: 150px;
+    list-style: none;
   }
+  .li{
+    padding-left: 200px;
+    padding-top: 20px;
+    width: 30px;
+  }
+
+  .thenja{
+    display: flex;
+    justify-content: center;
+    padding-top: 15;
+    padding-bottom: 15;
+  }
+  .thenja h2{
+    font-size: 25;
+    width: 50%;
+    padding-left: 40px;
+  }
+  .tag {
+    display: flex;
+    background: #0e2866;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    clip-path: polygon(25% 0%, 100% 0, 100% 100%, 25% 100%, 0% 50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-size: 12;
+    padding: 15;
+  }
+    .lajmet{
+      display: grid;
+      grid-auto-row: 100px;
+      margin-left: 20%;
+    }
+    .lajmgrid{
+      display: flex;
+    }

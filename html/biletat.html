@@ -1,4 +1,4 @@
-<html>
+<html >
     <head>
         <link rel="stylesheet" type="text/css" href="../css/biletat.css">
         <title>Trafiku Urban i Prishtin&eumls</title>
@@ -43,93 +43,78 @@
                           <div class="form-group">
                             <div class="form-group emrimbiemri"  >
                               <!-- <label for="name" style="padding-left:10px;">Emri  </label> -->
-                            <input type="text" class="form-control" id="text" placeholder="First Name" name="Emri" style="width:150px;display: flex;" >
+                            <input type="text" class="form-control" id="Emri" placeholder="First Name" name="Emri" style="width:150px;display: flex;" >
                           </div>
                           <div class="form-group emrimbiemri" style="padding-left:5px;">
                             <!-- <label for="text" style="padding-left:12px;">Mbiemri </label> -->
-                            <input type="text" class="form-control" id="text" placeholder="Last Name" name="Mbiemri" style="width:228px;display:flex;" >
+                            <input type="text" class="form-control" id="Mbiemri" placeholder="Last Name" name="Mbiemri" style="width:228px;display:flex;" >
                           </div>
                           </div>
                           <div class="form-group">
                             <!-- <label for="text">Linja  </label> -->
-                            <input type="text" class="form-control" id="text" placeholder="4" name="Linja" style="width:390px;margin-left: 6px" >
+                            <input type="text" class="form-control" id="Linja" placeholder="4" name="Linja" style="width:390px;margin-left: 6px" >
                           </div>
                           <div class="form-group" style="padding-left:5px;">
                               <!-- <label for="email">Email  </label> -->
                               <input type="email" class="form-control" id="email" placeholder="example@email.com" name="Email" style="width:392px;">
                           </div>
                           <h3>Credit Card</h3>
-                         
                             <div class="creditcard">
                               <div class="creditcard name">
                               <input type="text" class="form-control" id="text" placeholder="Name on the Card" name="Name on the Card" style="width:390px;margin-left: 6px;margin-bottom: 12px">
                               </div>
                               <div class="creditcard number">
-                              <input type="text" class="form-control" id="text" placeholder="Creditcard Number" name="Creditcard Number" style="width:390px;margin-left: 6px;margin-bottom: 12px;">
+                              <input type="text" class="form-control" id="ccnr" placeholder="Creditcard Number" name="Creditcard Number" style="width:390px;margin-left: 6px;margin-bottom: 12px;">
                             </div>
                             <div class="ccdateccv">
                                 <input type="text" class="form-control" id="text" placeholder="Exp. Month Date" name="date" style="width:200;margin-left: 6px;margin-bottom: 12px;">
                                 <input type="text" class="form-control" id="text" placeholder="CCV" name="CCV" style="width:180px;margin-left: 6px">
-                              
-                                  
                               </div>
                           </div>
                             </div>
-                            <!-- <img src="https://api.qrserver.com/v1/create-qr-code/?data=0000001&amp;size=220x220&amp;margin=0" id="qrcode-preview-image" alt="Preview of your QR Code"> -->
-
-
-
-
-
-
-
-                          <div class="radio">
+                          
+                            
+                          <div class="radio" action="#" method="post" class="demoForm" id="demoForm">
                               <label for="text" style="padding-left:100px;font-family: helvetica;font-size: 25px;">Zgjedh Menyren </label>
                               <div class="radioform">
                                 <div  class="ditore" style="padding-right:10px;">
-                              <input  id="ditore" type="radio"  class="radiotype" name="menyra" value="0.40c"  >Ditore<br>
+                              <input  id="pagditore" type="radio"  class="radiotype" name="menyra" value="0.40c" onclick=""  >Ditore<br>
                               </div>
-                              <div id="javore" class="javore" style="padding-right:10;">
-                              <input type="radio" class="radiotype" name="menyra" value="10$" >Javore<br>
+                              <div " class="javore" style="padding-right:10;">
+                              <input id="pagjavore" type="radio" class="radiotype" name="menyra" value="10$" >Javore<br>
                               </div>
                               <div class="mujore" id="mujore" >
-                                  <input  type="radio"   class="radiotype" name="menyra" value="15$" >Mujore<br>
+                                  <input id="pagmujore" type="radio"   class="radiotype" name="menyra" value="15$" >Mujore<br>
                               </div>
                             </div>
                           </div>
                           <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
+                       
          </div>
         </div> 
-<!-- <div class="skripta">
-       <script style="justify-content:center;">
-         
-          var shuma= null;
-          function check() {
-        document.getElementById("ditore").checked = true;
+<script>
+
+    
+
+
+if (document.getElementById('pagditore').checked) {
+   value = document.getElementById('pagditore').value;
+   return value;
+   document.write(value);
+} else if (document.getElementById('pagjavore').checked) {
+   value = document.getElementById('pagjavore').value;
+} else if (document.getElementById('pagmujore').checked) {
+   value = document.getElementById('pagmujore').value;
 }
-          function ditorja() {
-          document.getElementById("ditore")
+ 
+if (value !== false) {
+   alert('Value of selected radio is ' + value);
+} else {
+   alert('Please select an option');
 }
 
-              ditore=document.getElementById("ditore");
-              javore=document.getElementById("javore");
-              mujore=document.getElementById("mujore");
-
-
-
-
-              // if(ditorja.check=true){
-              //   document.write(ditore.value);
-              // }  
-              // else if(ditore.check=false){
-                  
-              // }
-                document.getElementById("javore").val
-                document.write(document.getElementById(javore).nodeValue)
-              
-
-       </script> -->
-       </div>
+</script>
+       
     </body>
     </html>
