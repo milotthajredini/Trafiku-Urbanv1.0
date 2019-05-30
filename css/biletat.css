@@ -1,3 +1,6 @@
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
+           
 html{
     scroll-behavior: smooth;
 }
@@ -264,7 +267,10 @@ li a {
 }
 
 .pristine-error{
-  color: red;
+  color: rgba(255, 0, 0, 0.719);
   font-size: 15px;
   padding-left: 15px;
-}
+  font-family: 'Montserrat';
+  }
+
+  
