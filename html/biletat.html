@@ -3,6 +3,7 @@
         <link rel="stylesheet" type="text/css" href="../css/biletat.css">
         <title>Trafiku Urban i Prishtin&eumls</title>
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+       
         
         
 
@@ -39,36 +40,32 @@
             <div class="formleft">   
             <div class="container">
                         <h2>Bileta</h2>
-                        <form action="biletajuaj.html">
+                        <form id="form1" action="biletajuaj.html">
                           <div class="form-group">
                             <div class="form-group emrimbiemri"  >
-                              <!-- <label for="name" style="padding-left:10px;">Emri  </label> -->
-                            <input type="text" class="form-control" id="Emri" placeholder="First Name" name="Emri" style="width:150px;display: flex;" >
+                            <input type="text" required class="form-control" id="Emri" placeholder="First Name" name="Emri" style="width:150px;display: flex;" >
                           </div>
                           <div class="form-group emrimbiemri" style="padding-left:5px;">
-                            <!-- <label for="text" style="padding-left:12px;">Mbiemri </label> -->
-                            <input type="text" class="form-control" id="Mbiemri" placeholder="Last Name" name="Mbiemri" style="width:228px;display:flex;" >
+                            <input type="text" required class="form-control" id="Mbiemri" placeholder="Last Name" name="Mbiemri" style="width:228px;display:flex;" >
                           </div>
                           </div>
                           <div class="form-group">
-                            <!-- <label for="text">Linja  </label> -->
-                            <input type="text" class="form-control" id="Linja" placeholder="4" name="Linja" style="width:390px;margin-left: 6px" >
+                            <input type="text" required class="form-control" id="Linja" placeholder="4" name="Linja" style="width:390px;margin-left: 6px" >
                           </div>
                           <div class="form-group" style="padding-left:5px;">
-                              <!-- <label for="email">Email  </label> -->
-                              <input type="email" class="form-control" id="email" placeholder="example@email.com" name="Email" style="width:392px;">
+                              <input type="email" required class="form-control" id="email" placeholder="example@email.com" name="Email" style="width:392px;">
                           </div>
                           <h3>Credit Card</h3>
                             <div class="creditcard">
-                              <div class="creditcard name">
-                              <input type="text" class="form-control" id="text" placeholder="Name on the Card" name="Name on the Card" style="width:390px;margin-left: 6px;margin-bottom: 12px">
+                              <div class="form-group" >
+                              <input type="text"  required class="form-control" id="text" placeholder="Name on the Card" name="Name on the Card" style="width:390px;margin-left: 6px;">
                               </div>
-                              <div class="creditcard number">
-                              <input type="text" class="form-control" id="ccnr" placeholder="Creditcard Number" name="Creditcard Number" style="width:390px;margin-left: 6px;margin-bottom: 12px;">
+                              <div class="form-group">
+                              <input type="text" required class="form-control" id="ccnr" placeholder="Creditcard Number" name="Creditcard Number" style="width:390px;margin-left: 6px;margin-bottom: 12px;">
                             </div>
-                            <div class="ccdateccv">
-                                <input type="text" class="form-control" id="text" placeholder="Exp. Month Date" name="date" style="width:200;margin-left: 6px;margin-bottom: 12px;">
-                                <input type="text" class="form-control" id="text" placeholder="CCV" name="CCV" style="width:180px;margin-left: 6px">
+                            <div class="form-group ccdateccv">
+                                <input type="text" required class="form-control" id="text" placeholder="Exp. Month Date" name="date" style="width:200;margin-left: 6px;margin-bottom: 12px;">
+                                <input type="text" required class="form-control" id="text" placeholder="CCV" name="CCV" style="width:180px;margin-left: 6px">
                               </div>
                           </div>
                             </div>
@@ -78,42 +75,53 @@
                               <label for="text" style="padding-left:100px;font-family: helvetica;font-size: 25px;">Zgjedh Menyren </label>
                               <div class="radioform">
                                 <div  class="ditore" style="padding-right:10px;">
-                              <input  id="pagditore" type="radio"  class="radiotype" name="menyra" value="0.40c" onclick=""  >Ditore<br>
+                              <input  required id="pagditore" type="radio"  class="radiotype" name="menyra" value="0.40c" onclick="document.getElementsByName('menyra')"  >Ditore<br>
                               </div>
                               <div " class="javore" style="padding-right:10;">
-                              <input id="pagjavore" type="radio" class="radiotype" name="menyra" value="10$" >Javore<br>
+                              <input required id="pagjavore" type="radio" class="radiotype" name="menyra" value="10$" >Javore<br>
                               </div>
                               <div class="mujore" id="mujore" >
-                                  <input id="pagmujore" type="radio"   class="radiotype" name="menyra" value="15$" >Mujore<br>
+                                  <input required id="pagmujore" type="radio"   class="radiotype" name="menyra" value="15$" >Mujore<br>
                               </div>
                             </div>
                           </div>
-                          <button type="submit" class="btn btn-primary">Submit</button>
+                          <p class="cmimi" id="cmimibilet"></p>
+                          <button type="submit" class="btn btn-primary" >Submit</button>
                         </form>
                        
          </div>
         </div> 
-<script>
+<script src="../js/pristine.js"></script>
+<script >
+window.onload = function () {
 
-    
+var form = document.getElementById("form1");
+console.log(form);
+// create the pristine instance
+var pristine = new Pristine(form);
+console.log(pristine);
 
+form.addEventListener('submit', function (e) {
+   e.preventDefault();
+   
+   // check if the form is valid
+   var valid = pristine.validate(); // returns true or false
 
-if (document.getElementById('pagditore').checked) {
-   value = document.getElementById('pagditore').value;
-   return value;
-   document.write(value);
-} else if (document.getElementById('pagjavore').checked) {
-   value = document.getElementById('pagjavore').value;
-} else if (document.getElementById('pagmujore').checked) {
-   value = document.getElementById('pagmujore').value;
-}
- 
-if (value !== false) {
-   alert('Value of selected radio is ' + value);
-} else {
-   alert('Please select an option');
-}
-
+});
+};
+// console.log('fdfdf');
+// let Config1 = {
+//     // class of the parent element where the error/success class is added
+//     classTo: 'form-group emrimbiemri',
+//     errorClass: 'has-danger',
+//     successClass: 'has-success',
+//     // class of the parent element where error text element is appended
+//     errorTextParent: 'form-group',
+//     // type of element to create for the error text
+//     errorTextTag: 'div',
+//     // class of the error text element
+//     errorTextClass: 'text-help' 
+// };
 </script>
        
     </body>

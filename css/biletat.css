@@ -262,3 +262,9 @@ li a {
   justify-content: center;
   padding: 20px;
 }
+
+.pristine-error{
+  color: red;
+  font-size: 15px;
+  padding-left: 15px;
+}
