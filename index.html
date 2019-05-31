@@ -8,10 +8,7 @@
         <link rel="stylesheet" href="css/mini-event-calendar.css"></link>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         
     </head>
     <body>
@@ -25,7 +22,7 @@
             </div>
         
         </div>
-        
+        <!-- Navigation Bar -->
         <div class="nav">
         <ul>
                 <li> <a href="index.html">Ballina</a></li>
@@ -42,32 +39,13 @@
                       <li> <a href="html/rrethnesh.html">Rreth Nesh</a></li>
             </ul>
         </div>
+        <!-- Navigatrion Bar -->
         <!-- Container  -->
-        <div class="container" style="width: 940px;">
-        <div id="myCarousel" class="carousel slide">
-          <div class="carousel-inner" style="height: 350;">
-            <div class="carousel-item active">
-              <img src="img/Autobuset-e-Trafikut-Urban-foto-Facebook-Komuna-e-Prishtines-e1538060839838.jpg" alt="Los Angeles" width="1100" height="350">
-              <div class="carousel-caption">
-                <h3>Pranimi i Autobuseve</h3>
-                <p>Pranimi i autobuseve te rinje </p>
-              </div>
-            </div>
-            <div class="carousel-item" >
-              <img src="img/auto_trafiku1524298746.jpg" alt="Chicago" width="1100" height="350">
-            </div>
-            <div class="carousel-item" style="height: 350;">
-              <img src="img/autobusat-e-rinj-ne-prishtine.jpg" alt="New York" width="1100" height="350">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#myCarousel">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel">
-            <span class="carousel-control-next-icon"></span>
-          </a>
-        </div>
-        </div>
+        <div class="video">
+        <video autoplay muted loop>
+          <source src="vid/trafikuurban.mp4" type="video/mp4">
+        </video>
+      </div>
         <!-- Container End -->
         <!-- Calendar -->
         <div class="calendari">
@@ -105,7 +83,7 @@
         <form action="html/orari.html">
         <button class="button">Orari i Autobuseve</button>
     </form>
-        <form >
+        <form action="html/linjaaeroport.html">
         <button class="button">Linja e Aeroportit</button>
     </form>
     </div>
@@ -133,31 +111,7 @@
        
         </footer>
         <!-- Footer END  -->
-          <script>
-            $(document).ready(function(){
-              // Activate Carousel
-              $("#myCarousel").carousel();
-                
-              // Enable Carousel Indicators
-              $(".item1").click(function(){
-                $("#myCarousel").carousel(0);
-              });
-              $(".item2").click(function(){
-                $("#myCarousel").carousel(1);
-              });
-              $(".item3").click(function(){
-                $("#myCarousel").carousel(2);
-              });
-                
-              // Enable Carousel Controls
-              $(".carousel-control-prev").click(function(){
-                $("#myCarousel").carousel("prev");
-              });
-              $(".carousel-control-next").click(function(){
-                $("#myCarousel").carousel("next");
-              });
-            });
-            </script>
+          
   
   <script src="js/mini-event-calendar.js"></script>
   <script>

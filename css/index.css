@@ -183,6 +183,7 @@ li a {
     width: 50%;
     text-align: center;
     margin-left: 350;
+    font-family: 'Montserrat';
   }
   .tag {
     display: flex;
@@ -218,7 +219,8 @@ li a {
       padding: 5px;
       margin-left: 20px;
       width: 200px;
-      font-family: 'Noto Sans', sans-serif;
+      font-family: 'Montserrat';
+      font-size: 18px;
     }
 
     .nav2 button:hover{
@@ -235,4 +237,13 @@ li a {
     }
     #calendar{
       font-size: 10;
+    }
+    .video{
+      display: flex;
+      justify-content: center;
+      width: 1280px;
+      height: 350;
+      margin: auto;
+      padding-top: 40px;
+      
     }
