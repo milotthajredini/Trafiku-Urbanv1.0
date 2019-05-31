@@ -181,7 +181,8 @@ li a {
   .thenja h2{
     font-size: 25;
     width: 50%;
-    padding-left: 40px;
+    text-align: center;
+    margin-left: 350;
   }
   .tag {
     display: flex;
@@ -222,4 +223,16 @@ li a {
 
     .nav2 button:hover{
       background-color: rgb(189, 184, 184);
+    }
+    
+    .calendari{
+      display: block;
+      float: right;
+      width: 350;
+      height: 350;
+      margin-top: -320;
+      
+    }
+    #calendar{
+      font-size: 10;
     }

@@ -5,7 +5,7 @@
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/calendar.css" type="text/css">
         <!-- <link rel="stylesheet" href="css/tag.scss"> -->
-        
+        <link rel="stylesheet" href="css/mini-event-calendar.css"></link>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -42,9 +42,8 @@
                       <li> <a href="html/rrethnesh.html">Rreth Nesh</a></li>
             </ul>
         </div>
-
+        <!-- Container  -->
         <div class="container" style="width: 940px;">
-    <!-- <div class="container mt-3"> -->
         <div id="myCarousel" class="carousel slide">
           <div class="carousel-inner" style="height: 350;">
             <div class="carousel-item active">
@@ -69,14 +68,36 @@
           </a>
         </div>
         </div>
-<div class="thenja">
+        <!-- Container End -->
+        <!-- Calendar -->
+        <div class="calendari">
+        <div id="calendar" class="mini-cal">
+          <div id="calTitle">
+            <button type="button" class="month-mover prev">
+              <svg fill="#FFFFFF" height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+              </svg>
+            </button>
+            <div id="monthYear">May 2019</div>
+            <button type="button" class="month-mover next">
+              <svg fill="#FFFFFF" height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <div id="calThead"><div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div></div>
+            <div id="calTbody"><div class="a-date blurred"><span>28</span></div><div class="a-date blurred"><span>29</span></div><div class="a-date blurred"><span>30</span></div><button type="button" class="a-date " data-event="null"><span>1</span></button><button type="button" class="a-date " data-event="null"><span>2</span></button><button type="button" class="a-date " data-event="null"><span>3</span></button><button type="button" class="a-date " data-event="null"><span>4</span></button><button type="button" class="a-date " data-event="null"><span>5</span></button><button type="button" class="a-date " data-event="null"><span>6</span></button><button type="button" class="a-date " data-event="null"><span>7</span></button><button type="button" class="a-date " data-event="null"><span>8</span></button><button type="button" class="a-date " data-event="null"><span>9</span></button><button type="button" class="a-date " data-event="null"><span>10</span></button><button type="button" class="a-date " data-event="null"><span>11</span></button><button type="button" class="a-date " data-event="null"><span>12</span></button><button type="button" class="a-date " data-event="null"><span>13</span></button><button type="button" class="a-date " data-event="null"><span>14</span></button><button type="button" class="a-date " data-event="null"><span>15</span></button><button type="button" class="a-date " data-event="null"><span>16</span></button><button type="button" class="a-date " data-event="null"><span>17</span></button><button type="button" class="a-date " data-event="null"><span>18</span></button><button type="button" class="a-date " data-event="null"><span>19</span></button><button type="button" class="a-date " data-event="null"><span>20</span></button><button type="button" class="a-date " data-event="null"><span>21</span></button><button type="button" class="a-date " data-event="null"><span>22</span></button><button type="button" class="a-date " data-event="null"><span>23</span></button><button type="button" class="a-date event " data-event="{&quot;title&quot;:&quot;Soulful sundays bay area&quot;,&quot;date&quot;:1558729569362,&quot;link&quot;:&quot;https://www.eventbrite.com/e/soulful-sundays-bay-area-edition-tickets-55214242285?aff=ehomecard&quot;}"><span>24</span></button><button type="button" class="a-date " data-event="null"><span>25</span></button><button type="button" class="a-date " data-event="null"><span>26</span></button><button type="button" class="a-date " data-event="null"><span>27</span></button><button type="button" class="a-date " data-event="null"><span>28</span></button><button type="button" class="a-date " data-event="null"><span>29</span></button><button type="button" class="a-date " data-event="null"><span>30</span></button><button type="button" class="a-date current focused event " data-event="{&quot;title&quot;:&quot;London Comicon&quot;,&quot;date&quot;:1559334369363,&quot;link&quot;:&quot;https://www.eventbrite.co.uk/e/london-film-comic-con-summer-2019-tickets-49472593860?aff=ebdssbdestsearch&quot;}"><span>31</span></button><div class="a-date blurred"><span>1</span></div><div class="a-date blurred"><span>2</span></div><div class="a-date blurred"><span>3</span></div><div class="a-date blurred"><span>4</span></div><div class="a-date blurred"><span>5</span></div><div class="a-date blurred"><span>6</span></div><div class="a-date blurred"><span>7</span></div><div class="a-date blurred"><span>8</span></div></div>
+          </div>
+          
+        </div>
+        </div>
+        <!-- Calendar END  -->
+        <div class="thenja">
         <h2>"Institucion i besueshëm për qytetarët duke ofruar shërbime sa më efikase të transportit publik".</h2>
-        <!-- <form action="http://blog.trafikurban-pr.com/">
-        <button   class="tag" style="width: 150px;border: 0;"type="submit" >Njoftohu Me Shum</button>
-        </form> -->
-
        </div>
 
+       <!-- Navigation Bar -->
        <div class="nav2">
         <form class="form" action="http://livechat.trafikurban-pr.com/php/app.php?widget-mobile" >
         <button  class="button" >Kutia e Ankesav</button>
@@ -84,7 +105,7 @@
         <form action="html/orari.html">
         <button class="button">Orari i Autobuseve</button>
     </form>
-        <form action="html/linjaaeroport.html">
+        <form >
         <button class="button">Linja e Aeroportit</button>
     </form>
     </div>
@@ -100,8 +121,8 @@
             <p style="display: flex;padding-top: 30;margin-left: -150;">Kryetari i Prishtines</p>
           </div>
         </div>
-  
-
+  <!-- Navigation bar End -->
+      <!-- Footer   -->
         <footer>
     <div class="li">
     <li>Home</li>
@@ -111,6 +132,7 @@
   </div>
        
         </footer>
+        <!-- Footer END  -->
           <script>
             $(document).ready(function(){
               // Activate Carousel
@@ -136,6 +158,40 @@
               });
             });
             </script>
+  
+  <script src="js/mini-event-calendar.js"></script>
+  <script>
+		var sameDaylastWeek = new Date().setDate(new Date().getDate() - 7);
+		var someDaynextMonth = new Date().setDate(new Date().getDate() + 31);
+		// All dates should be provided in timestamps
+	    	var sampleEvents = [
+			{
+			    title: "Soulful sundays bay area",
+			    date: sameDaylastWeek, // Same day as today, last week
+			    link: "https://www.eventbrite.com/e/soulful-sundays-bay-area-edition-tickets-55214242285?aff=ehomecard"
+			},
+			{
+			    title: "London Comicon",
+			    date: new Date().getTime(), // Today
+			    link: "https://www.eventbrite.co.uk/e/london-film-comic-con-summer-2019-tickets-49472593860?aff=ebdssbdestsearch"
+			},
+			{
+			    title: "Youth Athletic Camp",
+			    date: someDaynextMonth, // Some day as today, next month
+			    link: "https://www.eventbrite.com/e/leaner-stronger-faster-tm-youth-athletic-camp-2021-tickets-38245970728?aff=ebdssbdestsearch"
+			}
+	    	];
+		$(document).ready(function(){
+			$("#calendar").MEC({
+				events: sampleEvents
+			});
+			// Make calendar start on monday
+			$("#calendar2").MEC({
+				from_monday: true,
+				events: sampleEvents
+			});
+		});
+	</script>
 
     </body>
 </html>
