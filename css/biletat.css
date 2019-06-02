@@ -5,8 +5,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(../img/bck.jpg)
-
+  background-image: url(../img/backgroundv2.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  
 }
 .header{
     display: inline;

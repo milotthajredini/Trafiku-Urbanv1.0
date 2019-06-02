@@ -9,20 +9,24 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/responsive.css"></link>
     </head>
     <body>
         <div class="header">
-                <img src="img/twittert.png" href="" style="margin-top: 90;width: 30px;float: right;margin-right: 5px">
-                <a href="https://www.instagram.com/trafikuurban"><img src="img/instalogo.png"  style="margin-top: 90;width: 30px;float: right;margin-right: 5px"></a>
-           <a href="https://www.facebook.com/trafikurban/"><img src="img/fbico.png" href="https://www.facebook.com/trafikurban/" style="margin-top: 95;margin-right: 2px;float: right;width: 20px;">
-            </a><img src="img/logofinal.png"> </a>
+                <img id="twitter" src="img/twittert.png" href="" style="margin-top: 60;width: 30px;float: right;margin-right: 5px">
+                <a href="https://www.instagram.com/trafikuurban"><img id="insta" src="img/instalogo.png"  style="margin-top: 60;width: 30px;float: right;margin-right: 5px"></a>
+           <a href="https://www.facebook.com/trafikurban/"><img id="fb" src="img/fbico.png" href="https://www.facebook.com/trafikurban/" style="margin-top:65;margin-right: 2px;float: right;width: 20px;">
+           
             <div class="img2">
-                <img src="img/logo-k.png"> </a>
+                <img src="img/logo-k.png" id="logok" style="width:150px;float: left;margin-top: 40"> </a>
             </div>
         
         </div>
-        <!-- Navigation Bar -->
+        <div class="logokryesore">
+        <a href="index.html"><img id="logokryesore" src="img/logofinalv3.png" style="/* margin-left: 800; */display: flex;justify-content: center;/* margin: auto; */width: 300;margin: auto;"></a>
+      </div>
+        <!-- Navigation Bar --> 
         <div class="nav">
         <ul>
                 <li> <a href="index.html">Ballina</a></li>
@@ -42,12 +46,15 @@
         <!-- Navigatrion Bar -->
         <!-- Container  -->
         <div class="video">
-        <video autoplay muted loop>
+        <video id="videoindex" autoplay muted loop>
           <source src="vid/trafikuurban.mp4" type="video/mp4">
         </video>
       </div>
         <!-- Container End -->
-        <!-- Calendar -->
+         <!-- Calendar -->
+         <div class="dropcalendar">
+           <button id="buttoncal" >Calendar</button>
+           <div class="calendari-drop">
         <div class="calendari">
         <div id="calendar" class="mini-cal">
           <div id="calTitle">
@@ -68,14 +75,16 @@
             <div id="calTbody"><div class="a-date blurred"><span>28</span></div><div class="a-date blurred"><span>29</span></div><div class="a-date blurred"><span>30</span></div><button type="button" class="a-date " data-event="null"><span>1</span></button><button type="button" class="a-date " data-event="null"><span>2</span></button><button type="button" class="a-date " data-event="null"><span>3</span></button><button type="button" class="a-date " data-event="null"><span>4</span></button><button type="button" class="a-date " data-event="null"><span>5</span></button><button type="button" class="a-date " data-event="null"><span>6</span></button><button type="button" class="a-date " data-event="null"><span>7</span></button><button type="button" class="a-date " data-event="null"><span>8</span></button><button type="button" class="a-date " data-event="null"><span>9</span></button><button type="button" class="a-date " data-event="null"><span>10</span></button><button type="button" class="a-date " data-event="null"><span>11</span></button><button type="button" class="a-date " data-event="null"><span>12</span></button><button type="button" class="a-date " data-event="null"><span>13</span></button><button type="button" class="a-date " data-event="null"><span>14</span></button><button type="button" class="a-date " data-event="null"><span>15</span></button><button type="button" class="a-date " data-event="null"><span>16</span></button><button type="button" class="a-date " data-event="null"><span>17</span></button><button type="button" class="a-date " data-event="null"><span>18</span></button><button type="button" class="a-date " data-event="null"><span>19</span></button><button type="button" class="a-date " data-event="null"><span>20</span></button><button type="button" class="a-date " data-event="null"><span>21</span></button><button type="button" class="a-date " data-event="null"><span>22</span></button><button type="button" class="a-date " data-event="null"><span>23</span></button><button type="button" class="a-date event " data-event="{&quot;title&quot;:&quot;Soulful sundays bay area&quot;,&quot;date&quot;:1558729569362,&quot;link&quot;:&quot;https://www.eventbrite.com/e/soulful-sundays-bay-area-edition-tickets-55214242285?aff=ehomecard&quot;}"><span>24</span></button><button type="button" class="a-date " data-event="null"><span>25</span></button><button type="button" class="a-date " data-event="null"><span>26</span></button><button type="button" class="a-date " data-event="null"><span>27</span></button><button type="button" class="a-date " data-event="null"><span>28</span></button><button type="button" class="a-date " data-event="null"><span>29</span></button><button type="button" class="a-date " data-event="null"><span>30</span></button><button type="button" class="a-date current focused event " data-event="{&quot;title&quot;:&quot;London Comicon&quot;,&quot;date&quot;:1559334369363,&quot;link&quot;:&quot;https://www.eventbrite.co.uk/e/london-film-comic-con-summer-2019-tickets-49472593860?aff=ebdssbdestsearch&quot;}"><span>31</span></button><div class="a-date blurred"><span>1</span></div><div class="a-date blurred"><span>2</span></div><div class="a-date blurred"><span>3</span></div><div class="a-date blurred"><span>4</span></div><div class="a-date blurred"><span>5</span></div><div class="a-date blurred"><span>6</span></div><div class="a-date blurred"><span>7</span></div><div class="a-date blurred"><span>8</span></div></div>
           </div>
           
-        </div>
-        </div>
+        </div> 
+        </div> 
+      </div>
+      </div>
         <!-- Calendar END  -->
         <div class="thenja">
         <h2>"Institucion i besueshëm për qytetarët duke ofruar shërbime sa më efikase të transportit publik".</h2>
        </div>
 
-       <!-- Navigation Bar -->
+       <!-- Navigation Bar 2 -->
        <div class="nav2">
         <form class="form" action="http://livechat.trafikurban-pr.com/php/app.php?widget-mobile" >
         <button  class="button" >Kutia e Ankesav</button>
@@ -108,7 +117,7 @@
     <li>Hara</li>
     <li>Kontakti</li>
   </div>
-       
+  
         </footer>
         <!-- Footer END  -->
           

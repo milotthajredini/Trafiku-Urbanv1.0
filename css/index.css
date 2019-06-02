@@ -5,7 +5,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(../img/bck.jpg);
+    background-image: url(../img/backgroundv2.png);
     background-repeat:no-repeat;
     background-size:cover;
     
@@ -33,9 +33,7 @@ img.instalogo{
     /* float: left; */
     width: 150px;
 }
- /* .nav{
-     overflow: hidden;
- } */
+ 
 ul{
     
     display: flex;
@@ -46,7 +44,7 @@ ul{
     padding: 0;
     /* overflow: hidden; */
     border-radius: 25px;    
-    
+    margin-top: 20px;
 
 }
 li a {
@@ -159,12 +157,14 @@ li a {
     margin-left: 110px;
   }
   footer {
-    background-image: url(../img/footer.png);
+    background-image: url(../img/footer1.png);
     padding: 10px;
     text-align: center;
     color: white;
     height: 150px;
     list-style: none;
+    width: 100%;
+    margin: 0;
   }
   .li{
     padding-left: 200px;
@@ -177,6 +177,7 @@ li a {
     justify-content: center;
     padding-top: 15;
     padding-bottom: 15;
+    margin: 0;
   }
   .thenja h2{
     font-size: 25;
@@ -184,6 +185,7 @@ li a {
     text-align: center;
     margin-left: 350;
     font-family: 'Montserrat';
+    margin: auto;
   }
   .tag {
     display: flex;
@@ -227,23 +229,103 @@ li a {
       background-color: rgb(189, 184, 184);
     }
     
-    .calendari{
-      display: block;
-      float: right;
-      width: 350;
-      height: 350;
-      margin-top: -320;
-      
-    }
-    #calendar{
-      font-size: 10;
-    }
+    
     .video{
       display: flex;
       justify-content: center;
-      width: 1280px;
-      height: 350;
+    
       margin: auto;
-      padding-top: 40px;
+      padding-top: 25px;
+      border-radius: 10px;
+    }
+    
+    video{
+      border-radius: 15px;
+      object-fit: fill;
+      object-position:center;
+      height:400
+      ;width:60%;
+      max-width: 60%;
+      max-height: 400;
+      min-width: 20%;
+    }
+    .calendari-drop {
+      display: none;
+      position: absolute;
+      float: right;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      transition: 2s;
       
     }
+    .dropcalendar{
+      float: right;
+      display: block;
+      margin-top: -22%;
+    }
+    .dropcalendar button{
+      width: 15px;
+      height: 20px;
+      font-size: 0px;
+      border: 0px;
+      border-radius: 2px;
+      background-color: #2b64bf;
+      color: white;
+      padding: 0;
+      
+      
+    }
+    .dropcalendar button:hover{
+        width: 350px;
+        height: 20px;
+        transition: width 1s;
+        font-size: 15px;
+        padding: 0;
+        transition: 0.3s;
+       
+        
+    }
+
+    
+    .dropcalendar:hover .calendari-drop{
+      display: block;
+      margin-top: 3px;
+      width: 350;
+      height: 300;
+      transition-delay: 5s;
+      padding: 0;
+      transition: 2s;
+      
+        }
+      
+    @media screen and (max-width: 800px) {
+          .thenja h2{
+            
+            text-align: justify;
+            display: flex;
+            justify-content: center;
+            
+          }
+          #logokryesore{
+            object-fit: scale-down;
+            width:20px;
+          }
+          #videoindex{
+            display: flex;
+            object-fit: fill;
+           justify-content: center;
+           
+           
+
+          }
+          .nav2{
+            display: block;
+            justify-content: center;
+            margin: 50;
+
+          }
+          
+      }
+    
+
