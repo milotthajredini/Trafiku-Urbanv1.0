@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -276,7 +277,7 @@ li a {
       
       
     }
-    .dropcalendar button:hover{
+    .dropcalendar button{
         width: 350px;
         height: 20px;
         transition: width 1s;
@@ -286,8 +287,6 @@ li a {
        
         
     }
-
-    
     .dropcalendar:hover .calendari-drop{
       display: block;
       margin-top: 3px;
@@ -295,10 +294,41 @@ li a {
       height: 300;
       transition-delay: 5s;
       padding: 0;
-      transition: 2s;
+      transition: 4s;
+      
       
         }
-      
+        .grid-container {
+          display: inline-grid;
+          grid-template-columns: auto auto auto auto;
+          padding: 10px;
+          width: 100%;
+          margin-left: -25px;
+        }
+        .lajmet h1{
+          font-family: 'Montserrat';
+          margin: 0;
+        }
+        .grid-item{
+          font-family: 'Noto Serif', serif;
+          padding-left: 15px;
+          margin-left: -255;
+          margin-top: -25;
+          padding-bottom: 10px;
+        }
+        .grid-item p {
+          font-family: 'Montserrat';
+          font-size: 15px;
+          text-align: left;
+          padding-top: -10px;
+        }
+        .grid-item1 {
+          font-family: 'Noto Serif', serif;
+         
+        }
+        .grid-item a {
+          
+        }
     @media screen and (max-width: 800px) {
           .thenja h2{
             

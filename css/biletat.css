@@ -201,7 +201,7 @@ li a {
       margin-top: 20px;
       margin-left: 35px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #005ce6;
+      background-color: #3274c0;
       width: 90px ;
       height: 30px;
       border: 20px;
@@ -210,7 +210,7 @@ li a {
   }
   button.btn.btn-primary:hover{
       border: 30px;
-      background-color: #f9f9f9;
+      background-color: #005ce6;
       width: 100px;
       height: 35px;
       transition: 100ms;

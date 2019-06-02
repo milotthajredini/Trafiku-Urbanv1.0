@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 html{
     scroll-behavior: smooth;
 }
@@ -164,3 +166,7 @@ li a {
       width: 80%;
       height: 30%;
   }
+  h1{
+    display: flex;
+    font-family: 'Montserrat';
+}
