@@ -1,1 +1,0 @@
-Calendar : https://github.com/jestrux/jquery-mini-event-calendar

@@ -8,6 +8,7 @@ body{
   background-image: url(../img/backgroundv2.png);
   background-repeat:no-repeat;
   background-size:cover;
+  margin-bottom: 0%;
   
 }
 .header{
@@ -36,7 +37,7 @@ img.instalogo{
  /* .nav{
      overflow: hidden;
  } */
-ul{
+#ul{
     
     display: flex;
     justify-content: center; 
@@ -50,7 +51,7 @@ ul{
     
 
 }
-li a {
+#li a {
     display: flex;
     justify-content: space-between;
     color: black;
@@ -181,13 +182,20 @@ li a {
     border: 30px;
     font-size: 18px;
     padding-left: 8px;
+
   }
+  
   
   .form-control::placeholder{
       font-size: 15px;
       padding-left: 5px;
   }
       
+  .form-control:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed
+  }
   
   
   .btn{
@@ -267,6 +275,86 @@ li a {
   justify-content: center;
   padding: 20px;
 }
+footer {
+  /* background-image: url(../img/footer1.png); */
+  background-color: #0e2866;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  /* height: 150px; */
+  list-style: none;
+  /* width: 100%; */
+  margin: 0;
+  
+  margin-left: -8px;
+  margin-top: 5%;
+  margin-right: -8;
+  height: 18%;
+}
+.col1{
+  margin: auto;
+  display: block;
+  /* justify-content: center; */
+  margin-left: 17%;
+  margin-right: 10%;
+  width:300px;
+  margin-bottom: 20px;
+}
+.col2{
+  margin: auto;
+  display: block;
+  /* justify-content: center; */
+  margin-left: 28%;
+  margin-right: 20%;
+  width:300px;
+  font-size: 15;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: -5%;
+}
+.col3{
+  margin: auto;
+  display: block;
+  /* justify-content: center; */
+  margin-left: 50%;
+  margin-right: 20%;
+  width:300px;
+  font-size: 15;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: -5%;
+}
+.col4{
+  margin: auto;
+  display: block;
+  /* justify-content: center; */
+  margin-left: 65%;
+  margin-right: 20%;
+  width:300px;
+  font-size: 15;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: -6%;
+}
+
+  li a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+
+  }
+ul{
+  list-style: none;
+  margin: 0;
+  margin-top: -15;
+}
+.li{
+  padding-left: 200px;
+  padding-top: 20px;
+  width: 30px;
+}
+
 
 .pristine-error{
   color: rgba(255, 0, 0, 0.719);
@@ -275,4 +363,13 @@ li a {
   font-family: 'Montserrat';
   }
 
-  
+    .qrcode{
+      display: flex;
+    float: right;
+    margin-top: -25%;
+    margin-right: 200px;
+    }
+    .qrcode h1{
+      margin-top: -50px;
+    margin-right: -230;
+    }

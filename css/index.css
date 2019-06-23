@@ -166,8 +166,10 @@ img.instalogo{
     font-family: 'Work Sans', sans-serif;
     /* height: 150px; */
     list-style: none;
-    width: 100%;
+    /* width: 100%; */
     margin: 0;
+    margin-left: -8;
+    margin-right: -8;
   }
   .col1{
     margin: auto;
@@ -261,6 +263,7 @@ img.instalogo{
       display: grid;
       /* grid-auto-row: 100px; */
       margin-left: 20%;
+      overflow: hidden;
     }
     .lajmgrid{
       display: flex;
@@ -316,7 +319,7 @@ img.instalogo{
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
-      transition: 2s;
+      
       
     }
     .dropcalendar{
@@ -334,16 +337,16 @@ img.instalogo{
       color: white;
       padding: 0;
       margin-top: 5%;
-      
+      margin-right: 10px;
       
     }
     .dropcalendar button{
         width: 350px;
         height: 20px;
-        transition: width 1s;
+        
         font-size: 15px;
         padding: 0;
-        transition: 0.3s;
+        
        
         
     }
@@ -352,9 +355,9 @@ img.instalogo{
       margin-top: 3px;
       width: 350;
       height: 300;
-      transition-delay: 5s;
+      
       padding: 0;
-      transition: 4s;
+      
       
       
         }
