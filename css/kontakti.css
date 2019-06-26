@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Condensed');
-
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 html{
     scroll-behavior: smooth;
 }
@@ -7,6 +7,7 @@ body{
   background-image: url(../img/backgroundv2.png);
   background-repeat:no-repeat;
   background-size:cover;
+  margin-bottom: 0%;
   
 }
 .header{
@@ -35,7 +36,7 @@ img.instalogo{
  /* .nav{
      overflow: hidden;
  } */
-ul{
+#ul{
     
     display: flex;
     justify-content: center; 
@@ -48,7 +49,7 @@ ul{
     
 
 }
-li a {
+#li a {
     display: flex;
     justify-content: space-between;
     color: black;
@@ -70,6 +71,84 @@ li a {
     width: 100%;
     height: 40%;
 }
+footer {
+  /* background-image: url(../img/footer1.png); */
+  background-color: #0e2866;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  /* height: 150px; */
+  list-style: none;
+  /* width: 100%; */
+  margin: 0;
+  margin-left: -8;
+  margin-right: -8;
+  margin-bottom: -3%;
+}
+.col1{
+  margin: auto;
+  display: block;
+  /* justify-content: center; */
+  margin-left: 17%;
+  margin-right: 10%;
+  width:300px;
+  margin-bottom: 20px;
+}
+.col2{
+  margin: auto;
+  display: block;
+  /* justify-content: center; */
+  margin-left: 28%;
+  margin-right: 20%;
+  width:300px;
+  font-size: 15;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: -5%;
+}
+.col3{
+  margin: auto;
+  display: block;
+  /* justify-content: center; */
+  margin-left: 50%;
+  margin-right: 20%;
+  width:300px;
+  font-size: 15;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: -5%;
+}
+.col4{
+  margin: auto;
+  display: block;
+  /* justify-content: center; */
+  margin-left: 65%;
+  margin-right: 20%;
+  width:300px;
+  font-size: 15;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: -6%;
+}
+
+  li a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+
+  }
+ul{
+  list-style: none;
+  margin: 0;
+  margin-top: -15;
+}
+.li{
+  padding-left: 200px;
+  padding-top: 20px;
+  width: 30px;
+}
+
 
 .dropbtn {
     background-color: transparent;
@@ -109,6 +188,96 @@ li a {
     -webkit-animation: mymovee 800ms none;
     
   }
+  .nakontakto{
+    margin-top: 5%;
+    display: block;
+    margin-bottom: 3%;
+    margin-left: 1%;
+  }
+  .nakontakto h1{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+  }
+  
+  #ankes{
+    display: block;
+  }
+  input#emri{
+    width: 219;
+    height: 30;
+    font-size: 18;
+    border: 0;
+    padding-left: 3px;
+    
+    box-shadow:1px 1px 2px 2px rgba(44, 65, 97, 0.5);
+    border-radius: 5px;
+    margin-right: 22;
+    margin-left: 15;
+    
+  }
+  input#email{
+    padding-left: 3px;
+    width: 219;
+    height: 30;
+    font-size: 18;
+    border: none;
+    box-shadow: 1px 1px 2px 2px rgba(44, 65, 97, 0.5);
+    border-radius: 5px;
+    margin-right: -100;
+    margin-left: 5px;
+    
+  }
+  input[type=text], select, textarea {
+    width: 508;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px 4px rgba(44, 65, 97, 0.5);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    height: 100;
+    font-size: 16;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .emriemail{
+    display: block;
+    width: 300;
+  }
+  
+  input#ankes{
+    padding: 0%;
+    width: 508;
+    height: 100;
+    font-size: 14;
+    border: none;
+    
+    box-shadow: 2px 2px 5px 4px rgba(44, 65, 97, 0.5);
+    border-radius: 5px;
+  }
+  label#ankes{
+    margin-top: 10px;
+  }
+  button#butoni{
+    margin-top: 10px;
+    width: 70;
+    height: 30;
+    border: none;
+    background-color: #2b64bf;
+    color: #dbdbdb;
+    border-radius: 3px;
+
+  }
+  button#butoni:hover{
+    width: 80;
+    height: 35;
+    transition: 80ms;
+  }
+  label{
+    font-family: 'Poppins', sans-serif;
+  }
+  
   @-webkit-keyframes mymovee{
     0% {padding-top: 20%;}
   }

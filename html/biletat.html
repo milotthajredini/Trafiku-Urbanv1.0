@@ -27,6 +27,7 @@
       
       };
           </script> -->
+          <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
       <div class="header">
@@ -77,9 +78,9 @@
                           <div class="form-group" style="padding-left:5px;">
                               <input type="email" required onblur='generateBarCode();' class="form-control" id="email" placeholder="example@email.com" name="eemail" style="width:392px;box-shadow: 4px 3px 8px 0px rgba(0,0,0,0.75);">
                           </div>
-                          <h3>Credit Card</h3>
-                            <div class="creditcard">
-                              <div class="form-group" >
+                          <!-- <h3>Credit Card</h3>
+                            <div class="creditcard"> -->
+                              <!-- <div class="form-group" >
                               <input type="text" required  class="form-control" id="text" placeholder="Name on the Card" name="Name on the Card" style="width:390px;margin-left: 6px;box-shadow: 4px 3px 8px 0px rgba(0,0,0,0.75);">
                               </div>
                               <div class="form-group">
@@ -87,7 +88,7 @@
                             </div>
                             <div class="form-group ccdateccv">
                                 <input type="text" required  class="form-control" id="text" placeholder="Exp. Month Date" name="date" style="width:200;margin-left: 6px;margin-bottom: 12px;box-shadow: 4px 3px 8px 0px rgba(0,0,0,0.75);">
-                                <input type="text" required class="form-control" id="text" placeholder="CCV" name="CCV" style="width:180px;margin-left: 6px;box-shadow: 4px 3px 8px 0px rgba(0,0,0,0.75);">
+                                <input type="text" required class="form-control" id="text" placeholder="CCV" name="CCV" style="width:180px;margin-left: 6px;box-shadow: 4px 3px 8px 0px rgba(0,0,0,0.75);"> -->
                               </div>
                           </div>
                             </div>
@@ -97,34 +98,28 @@
                               <label for="text" style="padding-left:100px;font-family: helvetica;font-size: 25px;">Zgjedh Menyren </label>
                               <div class="radioform">
                                 <div  class="ditore" style="padding-right:10px;">
-                              <input  required id="pag" type="radio"  class="radiotype" name="menyra" value="40cent"   >Ditore<br>
+                              <input  required id="menyra" type="radio"  class="radiotype" name="menyra" value="Ditore">Ditore<br>
                               </div>
                               <div class="javore" style="padding-right:10;">
-                              <input required id="pag" type="radio" class="radiotype" name="menyra" value="10$" >Javore<br>
+                              <input required id="menyra" type="radio" class="radiotype" name="menyra" value="Javore" >Javore<br>
                               </div>
                               <div class="mujore" id="mujore" >
-                                  <input required id="pag" type="radio"   class="radiotype" name="menyra" value="15$" >Mujore<br>
+                                  <input required id="menyra" type="radio"   class="radiotype" name="menyra" value="Mujore" >Mujore<br>
                               </div>
                             </div>
                           </div>
                           <p class="cmimi" id="cmimibilet"></p>
-                         <button type="submit" class="btn btn-primary" >Submit</button>
+                          <button type="submit" class="btn btn-primary" >Blej</button>
                         </form>
+                       
+                        
                      
                         
          </div>
         </div> 
-        <!-- <div class="qrcode">
-          <h1 id="barcodeh1" style="display: none;">Bileta Juaj është</h1>
-          
-          
-        <img id='barcode' 
-            src="https://api.qrserver.com/v1/create-qr-code/?data=TrafikuUrban&amp;" 
-            alt="" 
-            title="HELLO" 
-            style="display: none;"
-            />
-  </div> -->
+        
+  </div> 
+  <!-- Footer -->
   <footer>
     <h5 style="margin-left: -40%;">PËRMBAJTJA E MENYS</h5>
     <h5 style="margin-left: 14%;margin-top:-40px;">INFORMATAT E NDËRMARJES</h5>

@@ -13,54 +13,99 @@ $first_name = mysqli_real_escape_string($link, $_REQUEST['emmmri']);
 $last_name = mysqli_real_escape_string($link, $_REQUEST['mmbiemri']);
 $email = mysqli_real_escape_string($link, $_REQUEST['eemail']);
 $linja = mysqli_real_escape_string($link, $_REQUEST['llinja']);
-$pagesa = mysqli_real_escape_string($link, $_REQUEST['menyra']);
+
 
 
  
 // attempt insert query execution
 $sql = "INSERT INTO biletat (Emri,Mbiemri,Email,Linja) VALUES ('$first_name','$last_name','$email','$linja')";
-$sql = "INSERT INTO linjat (Cmimi) VALUES ('$pagesa')";
+
+
 if(mysqli_query($link, $sql)){
+    
     
 } 
 else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
- 
+
 // close connection
+
 ?>
+
 
 <?php 
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "trafikuurban";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$link = mysqli_connect("127.0.0.1", "root","", "trafikuurban");
+ 
 // Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
 }
+ 
+// Escape user inputs for security
 
-$sql = "SELECT * FROM biletat ORDER BY BiletaID DESC LIMIT 1";
-$sql = "SELECT * FROM linjat ORDER BY BiletaID DESC LIMIT 1";
-$result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "<br>" ."Emri:" . $row["Emri"]."  Mbiemri: ". $row["Mbiemri"]."  Linja: ".$row["Linja"]. "  Email:  " . $row["Email"] . "<br>";}
-} else {
-    echo "0 results";
+$linja = mysqli_real_escape_string($link, $_REQUEST['llinja']);
+$menyra = mysqli_real_escape_string($link, $_REQUEST['menyra']);
+
+if($linja=="4" ){
+    $emristacion ="Germi";
+    
+    
+ }
+ else if($linja=="1"){
+    $emristacion ="Fush-Kosov";
+ }
+ else if($linja=="3"){
+    $emristacion ="MAT";
+ }
+ else if($linja=="7"){
+    $emristacion ="Kalbri";
+ }
+ else if($linja=="15"){
+    $emristacion ="Keqekoll";
+ }
+ else{
+    die ("Gabim");
+     
+ }
+if($menyra =="Ditore"){
+     $pagesa="1 Euro";
+ }
+ else if ($menyra =="Javore"){
+     $pagesa="5 Euro";
+ }
+ else if ($menyra =="Mujore"){
+    $pagesa="10 Euro";
 }
+else {
+    die ("Gabim");
+}
+ 
+$mydate=getdate(date("U"));
 
+ 
+// attempt insert query execution
+$sql = "INSERT INTO linjat (StacionetID,Emri,Menyra,Cmimi,created_at) VALUES ('$linja','$emristacion','$menyra','$pagesa',NOW())";
+
+
+if(mysqli_query($link, $sql)){
+    
+    
+} 
+else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
 
 ?>
 
+
+<?php 
+
+?>
 <html>
     <head>
-    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/biletajuaj.css">
         <title>Trafiku Urban i Prishtin&eumls</title>
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
@@ -100,34 +145,25 @@ if ($result->num_rows > 0) {
                       <li> <a href="rrethnesh.html">Rreth Nesh</a></li>
             </ul>
         </div>
-        <div class="main">
-            <h1>Bileta Juaj</h1>
-            <h2></h2>
-            <?php 
-            $servername = "127.0.0.1";
-            $username = "root";
-            $password = "";
-            $dbname = "trafikuurban";
+        <div class="main1" style="margin-left:40%;font-family: 'Montserrat', sans-serif;">
+            <h1>Emri:<?php echo "  ".$first_name ?></h1>
+            <h1>Mbiemri:<?php echo  "  ".$last_name ?></h1>
+            <h1>Linja:<?php echo  "  ".$emristacion."  ".$linja ?></h1>
+            <h1>Email:<?php echo  "  ".$email ?></h1>
             
-            // Create connection
-            $conn = mysqli_connect($servername, $username, $password, $dbname);
-            // Check connection
-            if (!$conn) {
-                die("Connection failed: " . mysqli_connect_error());
-            }
-            $query = "SELECT * FROM biletat WHERE email='$email'";
-            $query = "SELECT * FROM biletat WHERE emri='$emri'";
+            <h2>Bileta Juaj</h2>
+            <h2></h2> 
+        
             
-            ?>
             <img id='barcode' 
-            src="https://api.qrserver.com/v1/create-qr-code/?data=<?php echo "$email"; ?>"
+            src="https://api.qrserver.com/v1/create-qr-code/?data=<?php  
+            echo "$first_name"." "."$last_name"." "."Email: "."$email"."  "."Linja: "."$linja"."   "."Çmimi: "."$pagesa"."  Ora: "."$mydate[hours],$mydate[minutes]"." Data: "."$mydate[mday],$mydate[month],$mydate[year]"; ?>"
             alt= "fdf" 
             title="HELLO" 
-            style="display: block;margin-top: 80;
-            margin-left: -200;"
+            
             />
            
-        </div>
+            </div>
 
     
     

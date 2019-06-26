@@ -107,33 +107,31 @@ li a {
     -webkit-animation: mymovee 800ms none;
     
   }
-  @-webkit-keyframes mymovee{
+  
+  
+  /* @-webkit-keyframes mymovee{
     0% {padding-top: 20%;}
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #f1f1f1}
+  /* .dropdown-content a:hover {background-color: #f1f1f1} */
   
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+  /* .dropdown:hover .dropdown-content {
     display: block;
     
-  }
+  } */
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
+  /* .dropdown:hover .dropbtn {
     background-color: #2b64bf;
     
   }
-  .main{
-      display: flex;
-      justify-content: center;
-      padding-top: 20px;
-  }
+  
   .button {
     background-color: #005ce6; /* Green */
-    border: none;
+    /* border: none;
     color: white;
     padding: 16px 32px;
     text-align: center;
@@ -144,8 +142,7 @@ li a {
     
     transition-duration: 0.4s;
     cursor: pointer;
-  }
-  .form{
+  } */
+  /* .form{
       margin: 0%;
-  }
-  
+  } */
