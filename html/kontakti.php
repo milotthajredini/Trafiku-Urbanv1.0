@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../css/kontakti.css">
@@ -62,7 +63,7 @@
         </div>
         <div class="nakontakto">
             <h1>Na Kontakto</h1>
-            <form id="kontaktid" action="../php/contactus.php">
+            <form id="kontaktid" action="email.php" method="POST">
                 <div class="emriemail">
                 <label>Emri</label>
                 <input type="text" maxlength="15" name="emri" id="emri">
