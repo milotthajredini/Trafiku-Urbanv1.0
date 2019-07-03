@@ -1,4 +1,4 @@
-<?php include "header.php";?>
+
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/index.css"></link>
@@ -13,8 +13,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/responsive.css"></link>
     </head>
-    <body>
+    <body id="bodyyy" >
         <div class="header">
+          <a  id="register" href="html/register.php">  | Register</a>   
+             <a  id="login" href="html/login.php">Login </a>    
+             
+           
                 <img id="twitter" src="img/twittert.png" href="" style="margin-top: 60;width: 30px;float: right;margin-right: 5px">
                 <a href="https://www.instagram.com/trafikuurban"><img id="insta" src="img/instalogo.png"  style="margin-top: 60;width: 30px;float: right;margin-right: 5px"></a>
            <a href="https://www.facebook.com/trafikurban/"><img id="fb" src="img/fbico.png" href="https://www.facebook.com/trafikurban/" style="margin-top:65;margin-right: 2px;float: right;width: 20px;">
@@ -160,6 +164,7 @@
       </div>
         <!-- Bashkpuntoret END -->
   <!-- Navigation bar End -->
+     
       <!-- Footer   -->
         <footer>
           <h5 style="margin-left: -40%;">PËRMBAJTJA E MENYS</h5>
@@ -253,7 +258,14 @@
 				events: sampleEvents
 			});
 		});
-	</script>
+  </script>
+  <script>
+  function show(){
+    document.getElementById('formalogin1').style.display='block';
+    document.getElementById('bodyyy').removeAttr('background-image');
+    
+  }
+  </script>
 
     </body>
 </html>

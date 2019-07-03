@@ -35,14 +35,19 @@ else{
 
 
 <?php 
-$link = mysqli_connect("127.0.0.1", "root","", "trafikuurban");
- 
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "trafikuurban";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
- 
-// Escape user inputs for security
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+
 
 
 $linja = mysqli_real_escape_string($link, $_REQUEST['llinja']);
@@ -69,6 +74,8 @@ if($linja=="4" ){
     die ("Gabim");
      
  }
+
+
 if($menyra =="Ditore"){
      $pagesa="1 Euro";
  }

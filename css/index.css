@@ -10,6 +10,7 @@ body{
     background-repeat:no-repeat;
     background-size:cover;
     margin: 0;
+    width: 99.7%;
 }
 .header{
     display: inline;
@@ -233,6 +234,35 @@ img.instalogo{
     padding-top: 20px;
     width: 30px;
   }
+  
+  #login {
+    float: right;
+    /* border: 0; */
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #register{
+    float: right;
+  }
+  #login:active{
+    color: red;
+    
+
+  }
+
+
+  /* #formaaa {
+    box-shadow: inset 0 0 490px black;
+    
+    background-color:black;
+} */
+#formalogin{
+  background-color: white;
+    z-index: 15;
+    width: 500;
+    height: 300;
+    border-radius: 10px;
+}
 
   .thenja{
     display: flex;

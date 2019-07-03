@@ -80,3 +80,37 @@ Thank you for contacting us. We will be in touch with you very soon.
 <?php
  }
 ?>
+
+<?php
+/* Attempt MySQL server connection. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+$link = mysqli_connect("127.0.0.1", "root","", "trafikuurban");
+ 
+// Check connection
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+ 
+// Escape user inputs for security
+$emri = mysqli_real_escape_string($link, $_REQUEST['emri']);
+$email = mysqli_real_escape_string($link, $_REQUEST['email']);
+$ankes = mysqli_real_escape_string($link, $_REQUEST['ankes']);
+
+
+
+
+ 
+// attempt insert query execution
+$sql = "INSERT INTO ankesat (Emri,Email,Ankesa) VALUES ('$emri','$email','$ankes')";
+
+
+if(mysqli_query($link, $sql)){
+   
+} 
+else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+
+// close connection
+
+?>

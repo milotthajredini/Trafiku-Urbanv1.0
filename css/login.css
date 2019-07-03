@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+  body{
+    background-image: url(../img/backgroundv2.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin: 0;
+    width: 99.7%;
+}
+
+input#username{
+  width: 219;
+  height: 30;
+  font-size: 18;
+  border: 0;
+  padding-left: 3px;
+  box-shadow: 4px 3px 8px 3px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  margin-left: 25%;
+ 
+}
+input#password{
+  padding-left: 3px;
+  width: 219;
+  box-shadow: 4px 3px 8px 3px rgba(0,0,0,0.5);
+  height: 30;
+  font-size: 18;
+  border: none;
+  
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 25%;
+  margin-right: 95;
+  
+}
+input#email{
+  padding-left: 3px;
+  width: 219;
+  box-shadow: 4px 3px 8px 3px rgba(0,0,0,0.5);
+  height: 30;
+  font-size: 18;
+  border: none;
+  
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 25%;
+  margin-right: 95;
+  
+}
+input#confpass{
+  padding-left: 3px;
+  width: 219;
+  box-shadow: 4px 3px 8px 3px rgba(0,0,0,0.5);
+  height: 30;
+  font-size: 18;
+  border: none;
+  
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 25%;
+  margin-right: 95;
+  
+}
+#signup{
+  margin-left: 35%;
+}
+p{
+  margin-top: 11%;
+    margin-left: 10px;
+    width: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+#h3{
+  display: flex;
+                justify-content: center;
+                font-family: 'Montserrat';
+                font-size: 30;padding-top: 30;
+}
+button#buttonlogin{
+  border: 0;
+  width: 60;
+  height: 30;
+  background-color: #2b64bf;
+  border-radius: 5px;
+  /* background-color: white; */
+  margin-left: 25%;
+  margin-top: 5px;
+}
+button#buttonlogin:hover{
+  width: 75;
+  height: 32;
+  transition: 80ms;
+}
+button#buttonregister{
+  border: 0;
+  width: 60;
+  height: 30;
+  background-color: #2b64bf;
+  border-radius: 5px;
+  /* background-color: white; */
+  margin-left: 25%;
+  margin-top: 5px;
+}
+button#buttonregister:hover{
+  width: 75;
+  height: 32;
+  transition: 80ms;
+}
+
+.loginform{
+  display: block;
+
+  margin-left: 40%;
+  width: 500px;
+  height: 300;
+  margin-top: 10%;
+  box-shadow: 1px 2px 5px 6px rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+  
+
+.loginform input{
+  margin-bottom: 5px;
+  
+}
+#login {
+  float: right;
+  /* border: 0; */
+  border-color: transparent;
+  background-color: transparent;
+}
+#register{
+  float: right;
+}
+#login:active{
+  color: red;
+} 
+  #formalogin{
+    background-color: white;
+      
+      width: 500;
+      height: 300;
+      border-radius: 10px;
+  }
