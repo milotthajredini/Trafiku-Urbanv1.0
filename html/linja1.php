@@ -1,36 +1,7 @@
-<?php
-/* Attempt MySQL server connection. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-$link = mysqli_connect("127.0.0.1", "root","", "trafikuurban");
- 
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
- 
 
-
-
- 
-// attempt insert query execution
-$sql = "SELECT * FROM linja1 WHERE 'Interval Kohor'=$interval";
-
-echo $interval;
-
-if(mysqli_query($link, $sql)){
-    
-    
-} 
-else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-}
-
-// close connection
-
-?>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/orari.css">
+        <link rel="stylesheet" type="text/css" href="../css/linja1.css">
         <title>Trafiku Urban i Prishtin&eumls</title>
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
         
@@ -58,60 +29,88 @@ else{
                 <div class="dropdown">
                         <button class="dropbtn">Linjat</button>
                         <div class="dropdown-content">
-                          <a href="../html/orari.html">Oraret</a>
+                          <a href="../html/orari.php">Oraret</a>
                           <a href="#">Stacionet</a>
                         </div>
                       </div>
                       <li> <a href="biletat.html">Biletat</a></li>
                       <li> <a href="hartat.html">Hartat</a></li>
-                      <li> <a href="kontakti.html">Kontakti</a></li>
+                      <li> <a href="kontakti.php">Kontakti</a></li>
                       <li> <a href="rrethnesh.html">Rreth Nesh</a></li>
             </ul>
         </div>
         <div class="main">
-            <form class="form" action="../html/linja1.html">
+            <form class="form" action="../html/linja1.php">
             <button class="button" >Linja 1</button>
             </form>
-            <form action="../html/linja3.html">
+            <form action="../html/linja3.php">
             <button class="button">Linja 3</button>
         </form>
-            <form action="../html/linja3c.html">
+            <form action="../html/linja3c.php">
             <button class="button">Linja 3C</button>
         </form>
-            <form action="../html/linja4.html">
+            <form action="../html/linja4.php">
             <button class="button">Linja 4</button>
         </form>
-            <form action="../html/linja7c.html">
+            <form action="../html/linja7c.php">
             <button class="button">Linja 7C</button>
         </form>
-            <form action="../html/linja15.html">
+            <form action="../html/linja15.php">
             <button class="button">Linja 15</button>
         </form>
         </div>
-            <div class="table">
-                <table style="width:100%">
-                    <tr>
-                      <th>Firstname</th>
-                      <th>Lastname</th> 
-                      <th>Age</th>
-                    </tr>
-                    <tr>
-                      <td>Jill</td>
-                      <td>Smith</td>
-                      <td>50</td>
-                    </tr>
-                    <tr>
-                      <td>Eve</td>
-                      <td>Jackson</td>
-                      <td>94</td>
-                    </tr>
-                    <tr>
-                      <td>John</td>
-                      <td>Doe</td>
-                      <td>80</td>
-                    </tr>
-                  </table>
-                  
+        <div class="table">
+            <table id="customers" >
+        <thead>
+            <tr>
+                <th>Interval Kohor</th>
+                <th>Nisja Nga Fakullteti</th>
+                <th>Stacionet</th>
+                <th>Arritja Fush Kosov</th>
+            </tr>
+        </thead>
+        <div class="tbody1">
+        <tbody>
+        <?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "trafikuurban";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT * FROM linja1";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr>";
+        echo "<td>".$row['Interval kohor']."</td>";
+       echo "<td>".$row['Nisja Nga Fakullteti']."</td>";
+       echo "<td>". $row['Stacionet']."</td>";
+       echo "<td>". $row['Arritja Fush Kosov']."</td>";
+      
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+?> 
+               
+
+           
+            </tbody>
+        </div>
+            </table>
+        </div>
             </div>
+
     </body>
     </html>

@@ -1,3 +1,4 @@
+
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
@@ -48,7 +49,7 @@ if ($conn->connect_error) {
 } 
 
 
-
+$sql="SELECT Ditore FROM cmimore ";
 
 $linja = mysqli_real_escape_string($link, $_REQUEST['llinja']);
 $menyra = mysqli_real_escape_string($link, $_REQUEST['menyra']);
@@ -142,13 +143,13 @@ else{
                 <div class="dropdown">
                         <button class="dropbtn">Linjat</button>
                         <div class="dropdown-content">
-                          <a href="orari.html">Oraret</a>
+                          <a href="orari.php">Oraret</a>
                           <a href="#">Stacionet</a>
                         </div>
                       </div>
                       <li> <a href="biletat.html">Biletat</a></li>
                       <li> <a href="hartat.html">Hartat</a></li>
-                      <li> <a href="kontakti.html">Kontakti</a></li>
+                      <li> <a href="kontakti.php">Kontakti</a></li>
                       <li> <a href="rrethnesh.html">Rreth Nesh</a></li>
             </ul>
         </div>
@@ -162,7 +163,7 @@ else{
             <h2></h2> 
         
             
-            <img id='barcode' 
+            <img name="barcode" id='barcode' 
             src="https://api.qrserver.com/v1/create-qr-code/?data=<?php  
             echo "$first_name"." "."$last_name"." "."Email: "."$email"."  "."Linja: "."$linja"."   "."Çmimi: "."$pagesa"."  Ora: "."$mydate[hours],$mydate[minutes]"." Data: "."$mydate[mday],$mydate[month],$mydate[year]"; ?>"
             alt= "fdf" 
@@ -171,10 +172,22 @@ else{
             />
            
             </div>
+            <?php     
 
+
+
+$subject = 'Trafiku Urban Bileta';
+
+
+$headers = 'From: trafikuurban.pr@gmail.com';
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+$message = 'Emri:'."$first_name".'<br>'."\n".'Mbiemri: '."$last_name".'<br>'."\n".'<br>'.'Linja: '."$emristacion".' '."$linja"."\n".'<br>'.'Çmimi: '."$pagesa"."\n".'<br>'.'Ora: '."$mydate[hours],$mydate[minutes]"."\n".'<br>'.'Data: '."$mydate[mday],$mydate[month],$mydate[year]".'<br>'.'Bileta juaj:  '."\n".'<br>'.'<img src="https://api.qrserver.com/v1/create-qr-code/?data='."$first_name"." "."$last_name"." "."Email: "."$email"."  "."Linja: "."$linja"."   "."Çmimi: "."$pagesa"."  Ora: "."$mydate[hours],$mydate[minutes]"." Data: "."$mydate[mday],$mydate[month],$mydate[year]".'"/>';
+mail($email,$subject,$message,$headers);
+?>
     
     
-    
+
   
         
     </body>

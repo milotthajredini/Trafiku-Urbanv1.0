@@ -31,13 +31,13 @@
                 <div class="dropdown">
                         <button class="dropbtn">Linjat</button>
                         <div class="dropdown-content">
-                          <a href="../html/orari.html">Oraret</a>
+                          <a href="../html/orari.php">Oraret</a>
                           <a href="#">Stacionet</a>
                         </div>
                       </div>
                       <li id="li"> <a href="biletat.html">Biletat</a></li>
                       <li id="li"> <a href="hartat.html">Hartat</a></li>
-                      <li id="li"> <a href="kontakti.html">Kontakti</a></li>
+                      <li id="li"> <a href="kontakti.php">Kontakti</a></li>
                       <li id="li"> <a href="rrethnesh.html">Rreth Nesh</a></li>
             </ul>
         </div>

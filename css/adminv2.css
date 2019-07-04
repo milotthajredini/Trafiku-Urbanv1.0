@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+           
+html{
+    scroll-behavior: smooth;
+}
+body{
+  background-image: url(../img/backgroundv2.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin-bottom: 0%;
+  
+}
+
+.table{
+    display: block;
+    /* justify-content: center; */
+    /* margin: auto; */
+    margin-top: 5%;
+    width: 610;
+    height: 20%;
+    overflow: auto;
+}
+
+#ankes{
+  display: block;
+}
+input#emri{
+  width: 219;
+  height: 30;
+  font-size: 18;
+  border: 0;
+  padding-left: 3px;
+  
+  box-shadow:1px 1px 2px 2px rgba(44, 65, 97, 0.5);
+  border-radius: 5px;
+  margin-right: 22;
+  margin-left: 15;
+  
+}
+input#email{
+  padding-left: 3px;
+  width: 219;
+  height: 30;
+  font-size: 18;
+  border: none;
+  box-shadow: 1px 1px 2px 2px rgba(44, 65, 97, 0.5);
+  border-radius: 5px;
+  margin-right: -100;
+  margin-left: 5px;
+  
+}
+input[type=text], select, textarea {
+  width: 508;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px 4px rgba(44, 65, 97, 0.5);
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  height: 100;
+  font-size: 16;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.emriemail{
+  display: block;
+  width: 300;
+}
+
+input#ankes{
+  padding: 0%;
+  width: 508;
+  height: 100;
+  font-size: 14;
+  border: none;
+  
+  box-shadow: 2px 2px 5px 4px rgba(44, 65, 97, 0.5);
+  border-radius: 5px;
+}
+label#ankes{
+  margin-top: 10px;
+}
+button#butoni{
+  margin-top: 10px;
+  width: 70;
+  height: 30;
+  border: none;
+  background-color: #2b64bf;
+  color: #dbdbdb;
+  border-radius: 3px;
+
+}
+#h3{
+    font-family: 'Montserrat';
+}
+button#butoni:hover{
+  width: 80;
+  height: 35;
+  transition: 80ms;
+}
+.content{
+  width: 150;
+  margin-top: -50;
+  float: right;
+  margin-right: -50;
+}
+#anks {
+  font-family: 'Roboto', sans-serif;
+  border-collapse: collapse;
+  
+}
+
+#anks td, #anks th {
+  border: 0.5px solid #ddd;
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#anks tr:nth-child(even){background-color: #f2f2f2;}
+
+#anks tr:hover {background-color: #ddd;}
+
+#anks th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(76, 139, 175);
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+
+h2{
+  font-family: 'Montserrat';
+}

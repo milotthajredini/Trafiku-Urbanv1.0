@@ -1,32 +1,3 @@
-<?php
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "trafikuurban";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-$sql = "SELECT Emri FROM Stacionet";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-    while($row = mysqli_fetch_assoc($result)) {
-        echo "Emri: " . $row["Emri"].  "<br>";
-    }
-} else {
-    echo "0 results";
-}
-
-mysqli_close($conn);
-
-
-?>
 
 
 <html>
@@ -59,33 +30,33 @@ mysqli_close($conn);
                 <div class="dropdown">
                         <button class="dropbtn">Linjat</button>
                         <div class="dropdown-content">
-                          <a href="../html/orari.html">Oraret</a>
+                          <a href="../html/orari.php">Oraret</a>
                           <a href="#">Stacionet</a>
                         </div>
                       </div>
                 <li> <a href="biletat.html">Biletat</a></li>
                 <li> <a href="hartat.html">Hartat</a></li>
-                <li> <a href="kontakti.html">Kontakti</a></li>
+                <li> <a href="kontakti.php">Kontakti</a></li>
                 <li> <a href="rrethnesh.html">Rreth Nesh</a></li>
             </ul>
         </div>
         <div class="main">
-            <form class="form" action="../html/linja1.html">
+            <form class="form" action="../html/linja1.php">
             <button class="button" >Linja 1</button>
             </form>
-            <form action="../html/linja3.html">
+            <form action="../html/linja3.php">
             <button class="button">Linja 3</button>
         </form>
-            <form action="../html/linja3c.html">
+            <form action="../html/linja3c.php">
             <button class="button">Linja 3C</button>
         </form>
-            <form action="../html/linja4.html">
+            <form action="../html/linja4.php">
             <button class="button">Linja 4</button>
         </form>
-            <form action="../html/linja7c.html">
+            <form action="../html/linja7c.php">
             <button class="button">Linja 7C</button>
         </form>
-            <form action="../html/linja15.html">
+            <form action="../html/linja15.php">
             <button class="button">Linja 15</button>
         </form>
 
