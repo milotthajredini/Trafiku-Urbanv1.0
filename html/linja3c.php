@@ -105,6 +105,9 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?> 
+
+</table>
+</div>
  <!-- Footer   -->
  <footer>
           <h5 style="margin-left: -40%;">PËRMBAJTJA E MENYS</h5>
