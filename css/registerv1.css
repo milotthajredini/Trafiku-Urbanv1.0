@@ -7,10 +7,6 @@
     margin: 0;
     width: 99.7%;
 }
-.error{
-  margin-top: -20;
-}
-}
 
 input#username{
   width: 219;
@@ -21,7 +17,7 @@ input#username{
   box-shadow: 4px 3px 8px 3px rgba(0,0,0,0.5);
   border-radius: 5px;
   margin-left: 25%;
- 
+ padding-left: 5px;
 }
 input#password{
   padding-left: 3px;
@@ -38,35 +34,46 @@ input#password{
   
 }
 input#email{
-  padding-left: 3px;
-  width: 219;
-  box-shadow: 4px 3px 8px 3px rgba(0,0,0,0.5);
-  height: 30;
-  font-size: 18;
-  border: none;
-  
-  border-radius: 5px;
-  margin-top: 15px;
-  margin-left: 25%;
-  margin-right: 95;
-  
-}
-input#confpass{
-  padding-left: 3px;
-  width: 219;
-  box-shadow: 4px 3px 8px 3px rgba(0,0,0,0.5);
-  height: 30;
-  font-size: 18;
-  border: none;
-  
-  border-radius: 5px;
-  margin-top: 15px;
-  margin-left: 25%;
-  margin-right: 95;
-  
-}
+    padding-left: 3px;
+    width: 219;
+    box-shadow: 4px 3px 8px 3px rgba(0,0,0,0.5);
+    height: 30;
+    font-size: 18;
+    border: none;
+    
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 25%;
+    margin-right: 95;
+    padding-left: 5px;
+    
+  }
+  input#confpass{
+    padding-left: 3px;
+    width: 219;
+    box-shadow: 4px 3px 8px 3px rgba(0,0,0,0.5);
+    height: 30;
+    font-size: 18;
+    border: none;
+    
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 25%;
+    margin-right: 95;
+    padding-left: 5px;
+    
+  }
+  .input-group{
+      width: 300px;
+  }
+  b{
+    display: none;
+  }
 #signup{
   margin-left: 35%;
+}
+.error{
+    margin-top: -20;
 }
 p{
   margin-top: 11%;
@@ -75,10 +82,11 @@ p{
     font-family: 'Open Sans', sans-serif;
 }
 #h3{
-  display: flex;
+                display: flex;
                 justify-content: center;
                 font-family: 'Montserrat';
-                font-size: 30;padding-top: 30;
+                font-size: 30;
+                padding-top: 30;
 }
 button#buttonlogin{
   border: 0;
@@ -116,7 +124,7 @@ button#buttonregister:hover{
 
   margin-left: 40%;
   width: 500px;
-  height: 300;
+  height: 400;
   margin-top: 10%;
   box-shadow: 1px 2px 5px 6px rgba(0,0,0,0.5);
   border-radius: 10px;
@@ -143,6 +151,6 @@ button#buttonregister:hover{
     background-color: white;
       
       width: 500;
-      height: 300;
+      height: 400;
       border-radius: 10px;
   }

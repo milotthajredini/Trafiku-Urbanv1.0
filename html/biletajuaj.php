@@ -65,7 +65,10 @@ if($linja=="4" ){
  else if($linja=="3"){
     $emristacion ="MAT";
  }
- else if($linja=="7"){
+ else if($linja=="3c"){
+    $emristacion ="Sinidoll";
+ }
+ else if($linja=="7c"){
     $emristacion ="Kalbri";
  }
  else if($linja=="15"){
@@ -75,17 +78,36 @@ if($linja=="4" ){
     die ("Gabim");
      
  }
-
+ $sql = "SELECT * FROM cmimore";
+ $result = $conn->query($sql);
+ 
+ 
 
 if($menyra =="Ditore"){
-     $pagesa="1 Euro";
+    if ($result->num_rows > 0) {
+     // output data of each row
+     while($row = $result->fetch_assoc()) {
+         $pagesa=$row['Ditore'];
+     }
+}
+     
  }
  else if ($menyra =="Javore"){
-     $pagesa="5 Euro";
- }
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+           $pagesa=$row['Javore'];
+        }
+    }}
+ 
  else if ($menyra =="Mujore"){
-    $pagesa="10 Euro";
-}
+   if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+         $pagesa=$row['Mujore'];
+        }}
+    }
+
 else {
     die ("Gabim");
 }
@@ -144,7 +166,7 @@ else{
                         <button class="dropbtn">Linjat</button>
                         <div class="dropdown-content">
                           <a href="orari.php">Oraret</a>
-                          <a href="#">Stacionet</a>
+                          
                         </div>
                       </div>
                       <li> <a href="biletat.html">Biletat</a></li>
@@ -182,7 +204,7 @@ $subject = 'Trafiku Urban Bileta';
 $headers = 'From: trafikuurban.pr@gmail.com';
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-$message = 'Emri:'."$first_name".'<br>'."\n".'Mbiemri: '."$last_name".'<br>'."\n".'<br>'.'Linja: '."$emristacion".' '."$linja"."\n".'<br>'.'Çmimi: '."$pagesa"."\n".'<br>'.'Ora: '."$mydate[hours],$mydate[minutes]"."\n".'<br>'.'Data: '."$mydate[mday],$mydate[month],$mydate[year]".'<br>'.'Bileta juaj:  '."\n".'<br>'.'<img src="https://api.qrserver.com/v1/create-qr-code/?data='."$first_name"." "."$last_name"." "."Email: "."$email"."  "."Linja: "."$linja"."   "."Çmimi: "."$pagesa"."  Ora: "."$mydate[hours],$mydate[minutes]"." Data: "."$mydate[mday],$mydate[month],$mydate[year]".'"/>';
+$message = 'Emri:'."$first_name".'<br>'."\n".'Mbiemri: '."$last_name".'<br>'."\n".'<br>'.'Linja: '."$emristacion".' '."$linja"."\n".'<br>'.'Çmimi: '."$pagesa"."\n".'<br>'.'Ora: '."$mydate[hours],$mydate[minutes]"."\n".'<br>'.'Data: '."$mydate[mday],$mydate[month],$mydate[year]".'<br>'.'Bileta juaj:  '."\n".'<br>'.'<br>'.'<br>'.'<img src="https://api.qrserver.com/v1/create-qr-code/?data='."$first_name"." "."$last_name"." "."Email: "."$email"."  "."Linja: "."$linja"."   "."Çmimi: "."$pagesa"."  Ora: "."$mydate[hours],$mydate[minutes]"." Data: "."$mydate[mday],$mydate[month],$mydate[year]".'"/>';
 mail($email,$subject,$message,$headers);
 ?>
     

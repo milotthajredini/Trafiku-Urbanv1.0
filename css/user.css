@@ -11,7 +11,10 @@ body{
   margin-bottom: 0%;
   
 }
-b{display: none;}
+button#buttonndrysho:hover{
+  width: 85;
+  height: 34;
+}
 .table{
     display: block;
     /* justify-content: center; */

@@ -11,7 +11,7 @@
 <html>
 <head>
 	<title>Admin-Trafiku Urban</title>
-	<link rel="stylesheet" type="text/css" href="../css/adminv2.css">
+	<link rel="stylesheet" type="text/css" href="../css/adminv4.css">
 </head>
 <body>
 	<div class="header">
@@ -31,7 +31,7 @@
 		<?php endif ?>
 
 		<!-- logged in user information -->
-		<div class="profile_info">
+		<div style="    margin-left: -40;" class="profile_info">
 			<img src="../img/admin_profile.png" width="50px"; height="50px"; >
 
 			<div>
@@ -41,7 +41,7 @@
 					<small>
 						<i  style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
 						<br>
-						<a href="home.php?logout='1'" style="color: red;">logout</a>
+						<a href="../index.html" style="color: red;">logout</a>
 						&nbsp; <a href="create_user.php"> + add user</a>
 					</small>
 
@@ -52,13 +52,14 @@
 
 
 	</div>
+	<div style="padding-top:230;" class="move">
 	<div class="table">
 	<table id="anks">
         <thead>
             <tr>
-                <td>Emri</td>
-                <td>Email</td>
-                <td>Ankesa</td>
+                <th>Emri</th>
+                <th>Email</th>
+                <th>Ankesa</th>
             </tr>
         </thead>
         <tbody>
@@ -100,16 +101,101 @@ $conn->close();
 			</table>
 		</div>
 
-		<div class="replymail">
+		<div style="width: 500;" class="replymail">
 			<h3 id="h3">Reply</h3>
 			<form name="ankes" id="ankes" action="../html/emailreply.php" method="POST">
 				<input type="text" name="emri" id="emri" placeholder="Emri">
 				<input type="email" name="email" id="email"placeholder="Email">
 				<textarea name="ankes" id="ankes"  placeholder="Shkruaj.."></textarea>
-				<button type="submit" name="submit" id="butoni"> Reply</button>
+				<button  type="submit" name="submit" id="butoni"> Reply</button>
 			</form>
-	
-    
-		</div>
+</div>
+		</div>		
+		<form id="cmimore" style="    margin-top: -200;display:grid;float:right;" action="" method="POST">
+				<h3 style="display:block;float:right;margin:auto;font-family: Montserrat;">Cmimore</h3>
+				<table id="cmimore">
+				<thead>
+				<th>Ditore</th>
+				<th>Javore</th>
+				<th>Mujore</th>
+				</thead>
+				
+				<?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "trafikuurban";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT Ditore, Javore, Mujore FROM cmimore";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr>";
+        echo "<td>".$row['Ditore']."</td>";
+       echo "<td>".$row['Javore']."</td>";
+       echo "<td>". $row['Mujore']."</td>";
+      
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+?> </table>
+				<select  style="width: 120; height: 30; padding: 0;" name="selectedValue" id="selectedValue">
+					<option  value="Ditore">Ditore</option>
+					<option value="Javore">Javore</option>
+					<option  value="Mujore">Mujore</option>
+				</select>
+				<input style="    width: 120;height: 30;padding: 0;" type="text" name="ndryshocmimin" id="ndryshocmimin" >
+				<button name="submit" id="butoni" type="submit">Ndrysho</button>
+			
+				</form>
+				<?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "trafikuurban";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+
+switch($_POST['selectedValue']){
+	case 'Ditore':
+		$sql="UPDATE cmimore SET Ditore='".$_POST['ndryshocmimin']."' WHERE cmimoreID=1";
+	break;
+	case 'Javore':
+	$sql="UPDATE cmimore SET Javore='".$_POST['ndryshocmimin']."' WHERE cmimoreID=1";
+	break;
+	case 'Mujore':
+	$sql="UPDATE cmimore SET Mujore='".$_POST['ndryshocmimin']."' WHERE cmimoreID=1";
+	break;
+	default:
+		
+}
+if ($conn->query($sql) === TRUE) {
+    echo "Record updated successfully";
+} else {
+    echo "Error updating record: " . $conn->error;
+}
+
+$conn->close();
+?>
+
+		
 </body>
 </html>

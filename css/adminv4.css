@@ -1,6 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-           
+.buttonndrysho{
+    
+}
+
+#cmimore {
+  font-family: 'Roboto', sans-serif;
+  border-collapse: collapse;
+  
+}
+
+#cmimore td, #cmimore th {
+  border: 0.5px solid #ddd;
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#cmimore tr:nth-child(even){background-color: #f2f2f2;}
+
+#cmimore tr:hover {background-color: #ddd;}
+
+#cmimore th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(76, 139, 175);
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}         
 html{
     scroll-behavior: smooth;
 }
@@ -11,19 +40,24 @@ body{
   margin-bottom: 0%;
   
 }
+br{
+    display: none;
+}
+
 b{display: none;}
 .table{
     display: block;
     /* justify-content: center; */
     /* margin: auto; */
     margin-top: 5%;
-    width: 610;
+    width: 625;
     height: 20%;
     overflow: auto;
 }
 
 #ankes{
   display: block;
+  width: 500px;
 }
 input#emri{
   width: 219;
@@ -101,14 +135,16 @@ button#butoni:hover{
   transition: 80ms;
 }
 .content{
+    display: block;
   width: 150;
   margin-top: -50;
   float: right;
-  margin-right: -50;
+  /* margin-right: -50; */
 }
 #anks {
   font-family: 'Roboto', sans-serif;
   border-collapse: collapse;
+  width: 
   
 }
 

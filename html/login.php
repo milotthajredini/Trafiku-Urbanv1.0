@@ -1,36 +1,34 @@
 <?php include('functions.php') ?>
-<!DOCTYPE html>
+
 <html>
 <head>
-	<title>Registration system PHP and MySQL</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 <body>
 
 	<div class="header">
-		<h2>Login</h2>
+		
 	</div>
-	
+	<div class="loginform">
 	<form method="post" action="login.php">
-
+			
+		<h3 id="h3">Login</h3>
+		<div class="error">
 		<?php echo display_error(); ?>
-
+</div>
+			<input type="text" id="username" name="username" placeholder="Username">
+		
+			<input type="password"  id="password" placeholder="Password" name="password">
+		
 		<div class="input-group">
-			<label>Username</label>
-			<input type="text" name="username" >
-		</div>
-		<div class="input-group">
-			<label>Password</label>
-			<input type="password" name="password">
-		</div>
-		<div class="input-group">
-			<button type="submit" class="btn" name="login_btn">Login</button>
-		</div>
+			<button type="submit" id="buttonlogin" class="btn" name="login_btn">Login</button>
+		
 		<p>
 			Not yet a member? <a href="register.php">Sign up</a>
 		</p>
 	</form>
-
+</div>
 
 </body>
 </html>

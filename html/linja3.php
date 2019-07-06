@@ -4,7 +4,7 @@
         <title>Trafiku Urban i Prishtin&eumls</title>
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
         
-        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
     </head>
     <body>
@@ -29,7 +29,7 @@
                         <button class="dropbtn">Linjat</button>
                         <div class="dropdown-content">
                           <a href="../html/orari.php">Oraret</a>
-                          <a href="#">Stacionet</a>
+                      
                         </div>
                       </div>
                       <li> <a href="biletat.html">Biletat</a></li>
@@ -59,6 +59,7 @@
         </form>
 
         </div>
+        <h1 style="display:flex;justify-content:center;margin:auto;font-family: Montserrat;">Linja 3</h1>
         <div class="table">
             <table id="customers" >
         <thead>

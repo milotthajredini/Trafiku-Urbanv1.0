@@ -1,12 +1,11 @@
-
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/linja1v1.css">
+        <link rel="stylesheet" type="text/css" href="../css/linja3cv1.css">
         <title>Trafiku Urban i Prishtin&eumls</title>
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
         
+        
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
     </head>
     <body>
         <div class="header">
@@ -24,19 +23,19 @@
   </div>
         
         <div class="nav">
-        <ul id="ul">
-                <li id="li"> <a href="../index.html">Ballina</a></li>
+        <ul>
+                <li> <a href="../index.html">Ballina</a></li>
                 <div class="dropdown">
                         <button class="dropbtn">Linjat</button>
                         <div class="dropdown-content">
                           <a href="../html/orari.php">Oraret</a>
-                      
+                    
                         </div>
                       </div>
-                <li id="li"> <a href="biletat.html">Biletat</a></li>
-                <li id="li"> <a href="hartat.html">Hartat</a></li>
-                <li id="li"> <a href="kontakti.php">Kontakti</a></li>
-                <li id="li"> <a href="rrethnesh.html">Rreth Nesh</a></li>
+                      <li> <a href="biletat.html">Biletat</a></li>
+                      <li> <a href="hartat.html">Hartat</a></li>
+                      <li> <a href="kontakti.php">Kontakti</a></li>
+                      <li> <a href="rrethnesh.html">Rreth Nesh</a></li>
             </ul>
         </div>
         <div class="main">
@@ -59,15 +58,17 @@
             <button class="button">Linja 15</button>
         </form>
         </div>
-        <h1 style="display:flex;justify-content:center;margin:auto;font-family: Montserrat;">Linja 1</h1>
+        <h1 style="display:flex;justify-content:center;margin:auto;font-family: Montserrat;">Linja 3C</h1>
         <div class="table">
+        
             <table id="customers" >
+
         <thead>
             <tr>
                 <th>Interval Kohor</th>
-                <th>Nisja Nga Fakullteti</th>
+                <th>Nisja Nga Sinidolli</th>
                 <th>Stacionet</th>
-                <th>Arritja Fush Kosov</th>
+                <th>Arritja ne Koder te Diellit</th>
             </tr>
         </thead>
         <div class="tbody1">
@@ -85,17 +86,17 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM linja1";
+$sql = "SELECT * FROM linja3c";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<td>".$row['Interval kohor']."</td>";
-       echo "<td>".$row['Nisja Nga Fakullteti']."</td>";
+        echo "<td>".$row['Interval Kohor']."</td>";
+       echo "<td>".$row['Nisja nga Sinidolli']."</td>";
        echo "<td>". $row['Stacionet']."</td>";
-       echo "<td>". $row['Arritja Fush Kosov']."</td>";
+       echo "<td>". $row['Arritja ne koder te Diellit']."</td>";
       
     }
 } else {
@@ -104,70 +105,5 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?> 
-               
-
-           
-            </tbody>
-        </div>
-            </table>
-        </div>
-            </div>
-            <footer>
-          <h5 style="margin-left: -40%;">PËRMBAJTJA E MENYS</h5>
-          <h5 style="margin-left: 14%;margin-top:-40px;">INFORMATAT E NDËRMARJES</h5>
-          <h5 style="margin-left: 45%;margin-top:-38px;">QËNDRO NË KONTAKT</h5>
-    <div class="col1">
-      <ul>
-        <li><a href="index.html">Ballina</a></li>
-        <li><a href="html/orari.html">Linjat</a></li>
-        <li><a href="html/biletat.html">Biletat</a></li>
-        <li><a href="html/hartat.html">Hartat</a></li>
-        <li><a href="html/kontakti.html">Kontakti</a></li>
-      </ul> 
-    </div>
-      <div class="col2">
-        <ul>
-        <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-shq.html">Departamenti i Prokurorimit</a></li>
-        <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-kontakt-shq.html">Njoftim për kontratë</a> </li>
-        <li><a href="Njoftim për dhënien e kontratës"></a></li>
-        <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-n-kontrate-shq.html">Nj. për nënshkrimin e kontratës</a></li>
-        <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-n-anulim-shq.html">Njoftim për anulim</a></li>
-      </ul>
-      </div>
-      
-      <div class="col3">
-        <ul>
-          <li> 
-<a href="">Struktura e Ndërmarjes </a>
-          </li>
-          <li>
-<a href="http://trafikurban-pr.com/shq/information-2-shq.html">  Bordi Udhëhqës</a>
-          </li>
-          <li>
-<a href="http://trafikurban-pr.com/shq/information-3-shq.html">Kryeshefi Ekzekutiv</a>
-          </li>
-          <li>
-<a href="http://trafikurban-pr.com/shq/information-5-shq.html">Organogrami</a>
-          </li>
-          <li>
-<a href="http://trafikurban-pr.com/shq/partner-donator-shq.html">Partnerët & Donatorët</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col4">
-        <ul>
-          <li>Tel: + 383 (0) 45 10 11 22</li>
-          <li>Email: info@trafikurban-pr.com</li>
-          <li><br></li>
-          <li>NPK Trafiku Urban SH.A</li>
-          <li>Rr. Tahir Zajmi, nr.43, Prishtinë.</li>
-        </ul>
-      </div>
-        
-      
-      
-  
-  
-        </footer>
     </body>
     </html>

@@ -1,41 +1,34 @@
 <?php include('functions.php') ?>
-<!DOCTYPE html>
+
 <html>
 <head>
-	<title>Registration system PHP and MySQL</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="../css/registerv1.css">
 </head>
 <body>
 	<div class="header">
-		<h2>Register</h2>
+		
 	</div>
-	
-	<form method="post" action="register.php">
-
+	<div class="loginform">
+	<form id="singup" method="post" action="register.php">
+			
+	<h3 id="h3">Sign Up</h3>
 		<?php echo display_error(); ?>
 
-		<div class="input-group">
-			<label>Username</label>
-			<input type="text" name="username" value="<?php echo $username; ?>">
-		</div>
-		<div class="input-group">
-			<label>Email</label>
-			<input type="email" name="email" value="<?php echo $email; ?>">
-		</div>
-		<div class="input-group">
-			<label>Password</label>
-			<input type="password" name="password_1">
-		</div>
-		<div class="input-group">
-			<label>Confirm password</label>
-			<input type="password" name="password_2">
-		</div>
-		<div class="input-group">
-			<button type="submit" class="btn" name="register_btn">Register</button>
-		</div>
+			<input type="text" id="username" name="username" placeholder="Username" value="<?php echo $username; ?>">
+		
+			<input type="email" id="email" name="email" placeholder="example@mail.com" value="<?php echo $email; ?>">
+			
+			<input type="password" id="password" placeholder="Password" name="password_1">
+		
+			<input type="password" id="confpass" placeholder="Confirm Password" name="password_2">
+		
+			<button type="submit" class="btn" id="buttonlogin" name="register_btn">Register</button>
+		
 		<p>
 			Already a member? <a href="login.php">Sign in</a>
 		</p>
 	</form>
+</div>
 </body>
 </html>

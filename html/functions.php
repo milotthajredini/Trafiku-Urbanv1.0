@@ -22,7 +22,7 @@
 	if (isset($_GET['logout'])) {
 		session_destroy();
 		unset($_SESSION['user']);
-		header("Location: ../html/login.php");
+		header("Location: ../index.html");
 	}
 
 	// REGISTER USER
@@ -59,7 +59,7 @@
 						  VALUES('$username', '$email', '$user_type', '$password')";
 				mysqli_query($db, $query);
 				$_SESSION['success']  = "New user successfully created!!";
-				header('location: home.php');
+				header('location: ../admin/home.php');
 			}else{
 				$query = "INSERT INTO users (username, email, user_type, password) 
 						  VALUES('$username', '$email', 'user', '$password')";
@@ -70,7 +70,7 @@
 
 				$_SESSION['user'] = getUserById($logged_in_user_id); // put logged in user in session
 				$_SESSION['success']  = "You are now logged in";
-				header('location: index.php');				
+				header('location: ../index.php');				
 			}
 
 		}
@@ -80,7 +80,7 @@
 	// return user array from their id
 	function getUserById($id){
 		global $db;
-		$query = "SELECT * FROM users WHERE id=" . $id;
+		$query = "SELECT * FROM users WHERE ID=" . $id;
 		$result = mysqli_query($db, $query);
 
 		$user = mysqli_fetch_assoc($result);
@@ -122,7 +122,7 @@
 					$_SESSION['user'] = $logged_in_user;
 					$_SESSION['success']  = "You are now logged in";
 
-					header('location: index.php');
+					header('location: ../index.php');
 				}
 			}else {
 				array_push($errors, "Wrong username/password combination");
@@ -167,3 +167,4 @@
 	}
 
 ?>
+	

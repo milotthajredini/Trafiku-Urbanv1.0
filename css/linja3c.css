@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+.table{
+  width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+   
+}
+
+
+#customers {
+  font-family: 'Roboto', sans-serif;
+  border-collapse: collapse;
+  
+}
+
+#customers td, #customers th {
+  border: 0.5px solid #ddd;
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(76, 139, 175);
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -103,12 +139,12 @@ li a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    -webkit-animation: mymovee 800ms none;
+    animation: mymovee 800ms none;
     
   }
-  @-webkit-keyframes mymovee{
+  /* @-webkit-keyframes mymovee{
     0% {padding-top: 20%;}
-  }
+  } */
   
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #f1f1f1}

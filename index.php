@@ -1,4 +1,11 @@
+<?php 
+	include('html/functions.php');
 
+	if (!isLoggedIn()) {
+		$_SESSION['msg'] = "You must log in first";
+		header('location: index.html ');
+	}
+?>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -11,13 +18,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
+        <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body id="bodyyy" >
+    <div >
+		<!-- notification message -->
+		<?php if (isset($_SESSION['success'])) : ?>
+			<div class="error success" >
+				<h3>
+					<?php 
+						echo $_SESSION['success']; 
+						unset($_SESSION['success']);
+					?>
+				</h3>
+			</div>
+		<?php endif ?>
+		<!-- logged in user information -->
+		<div style="widhth:100;float:right;"class="profile_info">
+			<img src="../img/user_profile.png"/>
+
+			<div>
+				<?php  if (isset($_SESSION['user'])) : ?>
+					<strong><?php echo $_SESSION['user']['username']; ?></strong>
+
+					<small>
+						<i  style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
+						<br>
+            <a href="index.php?logout='1'" style="color: red;">Logout</a>
+            <a href="user/user.php" style="color: black;">Settings</a>
+          </small>
+</div>
+
+        <?php endif ?>
+        
+      </div>
+      
         <div class="header">
           
-          <a  id="register" href="html/register.php">  | Register</a>   
-             <a  id="login" href="html/login.php">Login </a>    
+          <!-- <a  id="register" href="html/register.php">  | Register</a>   
+             <a  id="login" href="html/login.php">Login </a>     -->
              
            
                 <img id="twitter" src="img/twittert.png" href="" style="margin-top: 60;width: 30px;float: right;margin-right: 5px">
@@ -35,12 +74,12 @@
         <!-- Navigation Bar --> 
         <div class="nav">
         <ul id="ul">
-                <li id="li"> <a href="index.html">Ballina</a></li>
+                <li id="li"> <a href="index.php">Ballina</a></li>
                 <div class="dropdown">
                         <button class="dropbtn">Linjat</button>
                         <div class="dropdown-content">
                           <a id="li" href="html/orari.php">Oraret</a>
-                       
+                     
                         </div>
                       </div>
                       <li id="li"> <a href="html/biletat.html">Biletat</a></li>
@@ -119,16 +158,16 @@
            <img src="img/shpend.jpg" alt="" style="width: 100px;height:100px;">
             <div class="grid-item"> 
              <a href="http://blog.trafikurban-pr.com/kryetari-i-komunes-z-shpend-ahmeti-me-rastin-e-fillimit-te-linjes-se-aeroportit/" style="text-decoration:none;"> 
-              <h4>Kryetari i Komunës z.Shpend Ahmeti</br> me rastin e fillimit të Linjës së Aeroportit</h4></a>
+              <h4>Kryetari i Komunës z.Shpend Ahmeti<br> me rastin e fillimit të Linjës së Aeroportit</h4></a>
               <p style="margin-top: -10px;">
-                Sot filluam linjën Prishtinë – Aeroport – Prishtinë.</br> Kohëzgjatja ishte 43 minuta nga stacioni</br> ose rreth 35 minuta nga qendra... (më shumë) 
+                Sot filluam linjën Prishtinë – Aeroport – Prishtinë.<br> Kohëzgjatja ishte 43 minuta nga stacioni<br> ose rreth 35 minuta nga qendra... (më shumë) 
             </p>
             </div>
               <img src="img/bus.jpg" alt="" style="width: 100px;height:100px;">
             <div class="grid-item">
              <a href="http://blog.trafikurban-pr.com/linja-1a-prishtine-aeroport-prishtine/" style="text-decoration: none;"> <h4>Linja 1A: Prishtinë-Aeroport-Prishtinë</h4></a>
              <p>
-                    Linja e Aeroportit, e shumë pritur nga </br> qytetarët,</br> filloi se funksionuari me autobusët tanë </br>sipas orarit qe e gjeni ketu... (më shumë) 
+                    Linja e Aeroportit, e shumë pritur nga <br> qytetarët,<br> filloi se funksionuari me autobusët tanë <br>sipas orarit qe e gjeni ketu... (më shumë) 
                 </p>
               </div>
               <img src="img/tul.jpg" alt="" style="width: 100px;height:100px;">
