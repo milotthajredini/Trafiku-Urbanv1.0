@@ -4,7 +4,7 @@
         <link rel="stylesheet" type="text/css" href="../css/linja1v1.css">
         <title>Trafiku Urban i Prishtin&eumls</title>
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
-        
+        <link rel="stylesheet" type="text/css" href="../css/mediav1.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
     </head>
@@ -113,61 +113,65 @@ $conn->close();
         </div>
             </div>
             <footer>
-          <h5 style="margin-left: -40%;">PËRMBAJTJA E MENYS</h5>
-          <h5 style="margin-left: 14%;margin-top:-40px;">INFORMATAT E NDËRMARJES</h5>
-          <h5 style="margin-left: 45%;margin-top:-38px;">QËNDRO NË KONTAKT</h5>
-    <div class="col1">
-      <ul>
-        <li><a href="index.html">Ballina</a></li>
-        <li><a href="html/orari.html">Linjat</a></li>
-        <li><a href="html/biletat.html">Biletat</a></li>
-        <li><a href="html/hartat.html">Hartat</a></li>
-        <li><a href="html/kontakti.html">Kontakti</a></li>
-      </ul> 
-    </div>
-      <div class="col2">
-        <ul>
-        <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-shq.html">Departamenti i Prokurorimit</a></li>
-        <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-kontakt-shq.html">Njoftim për kontratë</a> </li>
-        <li><a href="Njoftim për dhënien e kontratës"></a></li>
-        <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-n-kontrate-shq.html">Nj. për nënshkrimin e kontratës</a></li>
-        <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-n-anulim-shq.html">Njoftim për anulim</a></li>
-      </ul>
-      </div>
       
-      <div class="col3">
+      
+      
+      <div class="col1">
+        <h5 >P&euml;RMBAJTJA E MENYS</h5>
         <ul>
-          <li> 
-<a href="">Struktura e Ndërmarjes </a>
-          </li>
-          <li>
-<a href="http://trafikurban-pr.com/shq/information-2-shq.html">  Bordi Udhëhqës</a>
-          </li>
-          <li>
-<a href="http://trafikurban-pr.com/shq/information-3-shq.html">Kryeshefi Ekzekutiv</a>
-          </li>
-          <li>
-<a href="http://trafikurban-pr.com/shq/information-5-shq.html">Organogrami</a>
-          </li>
-          <li>
-<a href="http://trafikurban-pr.com/shq/partner-donator-shq.html">Partnerët & Donatorët</a>
-          </li>
-        </ul>
+          <li><a href="index.html">Ballina</a></li>
+          <li><a href="html/orari.html">Linjat</a></li>
+          <li><a href="html/biletat.html">Biletat</a></li>
+          <li><a href="html/hartat.html">Hartat</a></li>
+          <li><a href="html/kontakti.html">Kontakti</a></li>
+        </ul> 
       </div>
-      <div class="col4">
-        <ul>
-          <li>Tel: + 383 (0) 45 10 11 22</li>
-          <li>Email: info@trafikurban-pr.com</li>
-          <li><br></li>
-          <li>NPK Trafiku Urban SH.A</li>
-          <li>Rr. Tahir Zajmi, nr.43, Prishtinë.</li>
+        <div class="col2">
+          <h5 >INFORMATAT E ND&euml;RMARJES</h5>
+          <ul>
+          <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-shq.html">Departamenti i Prokurorimit</a></li>
+          <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-kontakt-shq.html">Njoftim p&euml;r kontrat&euml;</a> </li>
+          <li><a href="Njoftim p&euml;r dh&euml;nien e kontrat&euml;s"></a></li>
+          <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-n-kontrate-shq.html">Nj. p&euml;r n&euml;nshkrimin e kontrat&euml;s</a></li>
+          <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-n-anulim-shq.html">Njoftim p&euml;r anulim</a></li>
         </ul>
-      </div>
+        </div>
+        
+        <div class="col3">
+          <h5 >Q&euml;NDRO N&euml; KONTAKT</h5>
+          <ul>
+            <li> 
+      <a href="">Struktura e Nd&euml;rmarjes </a>
+            </li>
+            <li>
+      <a href="http://trafikurban-pr.com/shq/information-2-shq.html">  Bordi Udh&euml;hq&euml;s</a>
+            </li>
+            <li>
+      <a href="http://trafikurban-pr.com/shq/information-3-shq.html">Kryeshefi Ekzekutiv</a>
+            </li>
+            <li>
+      <a href="http://trafikurban-pr.com/shq/information-5-shq.html">Organogrami</a>
+            </li>
+            <li>
+      <a href="http://trafikurban-pr.com/shq/partner-donator-shq.html">Partner&euml;t & Donator&euml;t</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col4">
+          <ul>
+            <li>Tel: + 383 (0) 45 10 11 22</li>
+            <li>Email: info@trafikurban-pr.com</li>
+            <li><br></li>
+            <li>NPK Trafiku Urban SH.A</li>
+            <li>Rr. Tahir Zajmi, nr.43, Prishtin&euml;.</li>
+          </ul>
+        </div>
+          
+        
         
       
       
-  
-  
-        </footer>
+          </footer>
+          <!-- Footer END  -->
     </body>
     </html>

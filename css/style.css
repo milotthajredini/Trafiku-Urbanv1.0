@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+  text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+  text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 960px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+  text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}

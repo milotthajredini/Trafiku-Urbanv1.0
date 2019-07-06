@@ -4,7 +4,7 @@
         <link rel="stylesheet" type="text/css" href="../css/kontakti.css">
         <title>Trafiku Urban i Prishtin&eumls</title>
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
-        
+        <link rel="stylesheet" type="text/css" href="../css/mediav1.css">
         <style>
             @import url('https://fonts.googleapis.com/css?family=Montserrat');
             </style>
@@ -77,10 +77,11 @@
             </form>
         </div>
         <footer>
-            <h5 style="margin-left: -40%;">PËRMBAJTJA E MENYS</h5>
-            <h5 style="margin-left: 14%;margin-top:-40px;">INFORMATAT E NDËRMARJES</h5>
-            <h5 style="margin-left: 45%;margin-top:-38px;">QËNDRO NË KONTAKT</h5>
+            
+           
+            
       <div class="col1">
+        <h5 >PËRMBAJTJA E MENYS</h5>
         <ul>
           <li><a href="index.html">Ballina</a></li>
           <li><a href="html/orari.html">Linjat</a></li>
@@ -89,7 +90,8 @@
           <li><a href="html/kontakti.html">Kontakti</a></li>
         </ul> 
       </div>
-        <div class="col2">
+        <div class="col2"> 
+          <h5 >INFORMATAT E NDËRMARJES</h5>
           <ul>
           <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-shq.html">Departamenti i Prokurorimit</a></li>
           <li><a href="http://trafikurban-pr.com/shq/d-prokurimi-kontakt-shq.html">Njoftim për kontratë</a> </li>
@@ -100,6 +102,7 @@
         </div>
         
         <div class="col3">
+          <h5 >QËNDRO NË KONTAKT</h5>
           <ul>
             <li> 
   <a href="">Struktura e Ndërmarjes </a>

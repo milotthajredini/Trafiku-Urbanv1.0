@@ -8,7 +8,8 @@
 ?>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/indexv2.css">
+        <link rel="stylesheet" type="text/css" href="css/mediav1.css">
         <title>Trafiku Urban - Prishtin&euml</title>
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/calendar.css" type="text/css">

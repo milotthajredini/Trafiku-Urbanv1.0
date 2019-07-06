@@ -2,11 +2,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-  background-image: url(../img/backgroundv2.png);
-  background-repeat:no-repeat;
-  background-size:cover;
-  width: 100%;
-  
+    background-image: url(../img/backgroundv2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .header{
     display: inline;
@@ -131,8 +130,6 @@ img.instalogo{
       display: flex;
       justify-content: center;
       padding-top: 20px;
-      width: 700px;
-      margin: auto;
   }
   .button {
     background-color: #005ce6; /* Green */
@@ -144,15 +141,14 @@ img.instalogo{
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    width: 123;
-    
     transition-duration: 0.4s;
     cursor: pointer;
   }
   .form{
       margin: 0%;
   }
-  footer {
+
+   footer {
     /* background-image: url(../img/footer1.png); */
     background-color: #0e2866;
     padding: 5px;
@@ -164,7 +160,6 @@ img.instalogo{
     /* width: 100%; */
     margin: 0;
     margin-left: -8;
-    margin-top: 28%;
     margin-right: -8;
   }
   .col1{
