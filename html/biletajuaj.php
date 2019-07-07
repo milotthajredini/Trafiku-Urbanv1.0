@@ -195,7 +195,11 @@ else{
             />
            
             </div>
-            <?php     
+            <?php   
+            // Using the ini_set()
+ini_set("SMTP", "stmp@gmail.com");
+ini_set("sendmail_from", "trafikuurban.pr@gmail.com");
+ini_set("smtp_port", "587");  
 
 
 
