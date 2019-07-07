@@ -1,5 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.table{
+    width: 70%;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      margin-bottom: 15%;
+  }
+  
+  
+  #customers {
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+    
+  }
+  
+  #customers td, #customers th {
+    border: 0.5px solid #ddd;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(76, 139, 175);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
 html{
     scroll-behavior: smooth;
 }
@@ -56,7 +90,9 @@ img.instalogo{
     padding: 15px 15px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18;    
+    font-size: 18;
+    
+    
   }
   
   #li a:hover {
@@ -148,102 +184,81 @@ img.instalogo{
   }
   .form{
       margin: 0%;
+  } 
+  footer {
+    /* background-image: url(../img/footer1.png); */
+    background-color: #0e2866;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    /* height: 150px; */
+    list-style: none;
+    /* width: 100%; */
+    margin: 0;
+    margin-left: -8;
+    margin-right: -8;
   }
-  .map{
-      display: flex;
-      justify-content: center;
-
+  .col1{
+    margin: auto;
+    display: block;
+    /* justify-content: center; */
+    margin-left: 17%;
+    margin-right: 10%;
+    width:300px;
+    margin-bottom: 20px;
   }
-  .map h1{
-      display: flex;
-    
-  }
-  .orari{
-      display: flex;
-      justify-content: center;
-  }
-  .orari img{
-      width: 80%;
-      height: 85%;
-      border-radius: 10px;
-  }
-  h1{
-    display: flex;
-    font-family: 'Montserrat';
+  .col2 {
+    margin: auto;
+    display: block;
+    /* justify-content: center; */
+    margin-left: 31%;
+    margin-right: 20%;
+    width: 300px;
+    font-size: 15;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: -7%;
 }
-footer {
-  /* background-image: url(../img/footer1.png); */
-  background-color: #0e2866;
-  padding: 5px;
-  text-align: center;
-  color: white;
-  font-family: 'Work Sans', sans-serif;
-  /* height: 150px; */
-  list-style: none;
-  /* width: 100%; */
-  margin: 0;
-  margin-left: -8;
-  margin-right: -8;
-}
-.col1{
+.col3 {
   margin: auto;
   display: block;
   /* justify-content: center; */
-  margin-left: 17%;
-  margin-right: 10%;
-  width:300px;
-  margin-bottom: 20px;
-}
-.col2{
-  margin: auto;
-  display: block;
-  /* justify-content: center; */
-  margin-left: 28%;
+  margin-left: 45%;
   margin-right: 20%;
-  width:300px;
+  width: 300px;
   font-size: 15;
   text-align: left;
   margin-bottom: 20px;
-  margin-top: -5%;
+  width: 100%;
+  margin-top: -6%;
 }
-.col3{
+.col4 {
   margin: auto;
   display: block;
   /* justify-content: center; */
-  margin-left: 50%;
-  margin-right: 20%;
-  width:300px;
-  font-size: 15;
-  text-align: left;
-  margin-bottom: 20px;
-  margin-top: -5%;
-}
-.col4{
-  margin: auto;
-  display: block;
-  /* justify-content: center; */
-  margin-left: 65%;
-  margin-right: 20%;
-  width:300px;
+  margin-left: 60%;
+  /* margin-right: 20%; */
+  width: 300px;
   font-size: 15;
   text-align: left;
   margin-bottom: 20px;
   margin-top: -6%;
 }
 
-  li a{
-    color: white;
-    list-style: none;
-    text-decoration: none;
+    li a{
+      color: white;
+      list-style: none;
+      text-decoration: none;
 
+    }
+  ul{
+    list-style: none;
+    margin: 0;
+    margin-top: -15;
   }
-ul{
-  list-style: none;
-  margin: 0;
-  margin-top: -15;
-}
-.li{
-  padding-left: 200px;
-  padding-top: 20px;
-  width: 30px;
-}
+  .li{
+    padding-left: 200px;
+    padding-top: 20px;
+    width: 30px;
+  }

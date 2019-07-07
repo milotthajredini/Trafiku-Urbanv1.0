@@ -203,7 +203,7 @@ $subject = 'Trafiku Urban Bileta';
 
 
 $headers = 'From: trafikuurban.pr@gmail.com';
-$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "MIME-Version: Bileta\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 $message = 'Emri:'."$first_name".'<br>'."\n".'Mbiemri: '."$last_name".'<br>'."\n".'<br>'.'Linja: '."$emristacion".' '."$linja"."\n".'<br>'.'Çmimi: '."$pagesa"."\n".'<br>'.'Ora: '."$mydate[hours],$mydate[minutes]"."\n".'<br>'.'Data: '."$mydate[mday],$mydate[month],$mydate[year]".'<br>'.'Bileta juaj:  '."\n".'<br>'.'<br>'.'<br>'.'<img src="https://api.qrserver.com/v1/create-qr-code/?data='."$first_name"." "."$last_name"." "."Email: "."$email"."  "."Linja: "."$linja"."   "."Çmimi: "."$pagesa"."  Ora: "."$mydate[hours],$mydate[minutes]"." Data: "."$mydate[mday],$mydate[month],$mydate[year]".'"/>';
 mail($email,$subject,$message,$headers);

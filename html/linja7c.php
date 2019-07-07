@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/orari.css">
+        <link rel="stylesheet" type="text/css" href="../css/linja7c.css">
         <title>Trafiku Urban i Prishtin&eumls</title>
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
         
@@ -39,28 +39,75 @@
             </ul>
         </div>
         <div class="main">
-            <form class="form" action="../html/linja1.html">
+            <form class="form" action="../html/linja1.php">
             <button class="button" >Linja 1</button>
             </form>
-            <form action="../html/linja3.html">
+            <form action="../html/linja3.php">
             <button class="button">Linja 3</button>
         </form>
-            <form action="../html/linja3c.html">
+            <form action="../html/linja3c.php">
             <button class="button">Linja 3C</button>
         </form>
-            <form action="../html/linja4.html">
+            <form action="../html/linja4.php">
             <button class="button">Linja 4</button>
         </form>
-            <form action="../html/linja7c.html">
+            <form action="../html/linja7c.php">
             <button class="button">Linja 7C</button>
         </form>
-            <form action="../html/linja15.html">
+            <form action="../html/linja15.php">
             <button class="button">Linja 15</button>
         </form>
         </div>
-        <div class="img">
-            <img src="../img/orari7c.png" style="width:900px ;display:flex;justify-content:center;margin:auto;border-radius: 15px;">
-        </div>
+        <h1 style="display:flex;justify-content:center;margin:auto;font-family: Montserrat;">Linja 7C</h1>
+        <div class="table">
+        
+            <table id="customers" >
+
+        <thead>
+            <tr>
+                <th>Interval Kohor</th>
+                <th>Nisja Nga Mati</th>
+                <th>Stacionet</th>
+                <th>Arritja ne Germi</th>
+            </tr>
+        </thead>
+        <div class="tbody1">
+        <tbody>
+        <?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "trafikuurban";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT * FROM linja7c";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr>";
+        echo "<td>".$row['Intervali Kohor']."</td>";
+       echo "<td>".$row['Nisja nga lagja Kalabri']."</td>";
+       echo "<td>". $row['Stacionet']."</td>";
+       echo "<td>". $row['Arritja ne Kalabri']."</td>";
+      
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+?> 
+
+</table>
+</div>
          <!-- Footer   -->
          <footer>
       

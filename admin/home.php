@@ -12,6 +12,7 @@
 <head>
 	<title>Admin-Trafiku Urban</title>
 	<link rel="stylesheet" type="text/css" href="../css/adminv4.css">
+	<link rel="stylesheet" type="text/css" href="../css/mediav1.css">
 </head>
 <body>
 	<div class="header">

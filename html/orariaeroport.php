@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/orariaeroport.css">
+        <link rel="stylesheet" type="text/css" href="../css/orariaeroportv1.css">
         <title>Trafiku Urban i Prishtin&eumls</title>
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
         
@@ -47,10 +47,55 @@
         </form>
         </div>
         <h1 style="display: flex;justify-content:center;" > Orari i Aeroportit</h1>
-        <div class="map">
-        <div class="orari">
-                <img src="../img/orariaeroport.jpg" alt="Orari Aeroport">
-        </div>
+        <div style="margin-bottom: 15%;" class="table">
+        
+        <table id="customers" >
+
+    <thead>
+        <tr>
+           
+            <th>Nisja Nga Aeroporti</th>
+         
+            <th>Nisa Nga Stac.Bus-Prishtina</th>
+        </tr>
+    </thead>
+    <div class="tbody1">
+    <tbody>
+    <?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "trafikuurban";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT * FROM linjaaeroport";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+// output data of each row
+while($row = $result->fetch_assoc()) {
+    echo "<tr>";
+    
+   echo "<td>".$row['Nisja Nga Aeroporti']."</td>";
+ 
+   echo "<td>". $row['Nisja Nga Stac.Bus-Prishtina']."</td>";
+  
+}
+} else {
+echo "0 results";
+}
+
+$conn->close();
+?> 
+
+</table>
+</div>
         </div>
          <!-- Footer   -->
          <footer>

@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="../css/orariv1.css">
         <title>Trafiku Urban i Prishtin&eumls</title>
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
-        
+        <link rel="stylesheet" type="text/css" href="../css/mediav1.css">
         
 
     </head>

@@ -4,6 +4,7 @@
 <head>
 	<title>Sign Up</title>
 	<link rel="stylesheet" type="text/css" href="../css/registerv1.css">
+	<link rel="stylesheet" type="text/css" href="../css/mediav1.css">
 </head>
 <body>
 	<div class="header">
